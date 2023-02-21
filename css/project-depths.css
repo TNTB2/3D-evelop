@@ -1,0 +1,243 @@
+
+
+ /* --- PROJECT DEPTH STYLES --- */
+ #nhbrcDepth,
+ #homeProjectDepth,
+ #configuratorDepth,
+ #showcaseHomeDepth,
+ #productDepth,
+ #producyDisplayDepth {
+     width: 100%;
+     display: "none";
+     margin: -800px 0 0 -650px;
+     position: absolute;
+ }
+
+
+ .projectTable {
+     display: table;
+     width: 100%;
+ }
+
+ .projectTable-Row {
+     display: table-row;
+ }
+
+ /*projectDescriptions*/
+
+ .projectinfobox1,
+ .projectinfobox2 {
+     display: table-cell;
+     padding: 20px 50px 20px 30px;
+ }
+
+ .projectinfobox2 {
+     width: 250px;
+ }
+
+
+ .projectinfobox2 a {
+     color: white;
+     border-radius: 50%;
+     width: 20px;
+     height: 20px;
+     padding: 10px;
+     background-color: rgba(3, 186, 192, 0.466);
+     border: 2px solid white;
+ }
+
+ .projectinfobox2 a:hover {
+     color: rgba(3, 186, 192, 0.466);
+     background-color: rgb(255, 255, 255);
+     border: 2px solid rgba(3, 186, 192, 0.466);
+     box-shadow: 0 0 50px rgb(255, 255, 255);
+ }
+
+
+ .projectDetails h3 {
+     font-size: 1.8em;
+     margin-left: 5px;
+ }
+
+
+ .projectDetails {
+     background-color: black;
+     opacity: 0.95;
+     color: white;
+     margin: 0% 10% 5% 10%;
+     padding: 20px 40px 0px 40px;
+ }
+
+
+ .closeProjectButton {
+     background-color: rgba(10, 10, 10, 0.336);
+     border-radius: 50%;
+     width: 70px;
+     height: 70px;
+     color: white;
+     margin-top: 40px;
+     padding: 20px 0px 20px 0;
+     box-shadow: 0 0 50px rgba(3, 186, 192, 0.589);
+     border: 2px solid rgb(3, 186, 192, 0.5);
+ }
+
+ .closeProjectButton:hover {
+     background-color: rgba(3, 186, 192, 0.589);
+     box-shadow: 0 0 50px rgba(255, 255, 255, 0.589);
+     border: 2px solid rgba(255, 255, 255, 0.5);
+ }
+
+
+
+
+ .mySlides {
+     display: none
+ }
+
+ img {
+     vertical-align: middle;
+ }
+
+ /* Slideshow container */
+ .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: 50px 50px 0px 50px;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     padding: 16px;
+     margin-top: -22px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+     right: -8%;
+     border-radius: 3px 0 0 3px;
+ }
+
+ .prev {
+     left: -8%;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* Caption text */
+ .text {
+     color: #f2f2f2;
+     font-size: 15px;
+     padding: 8px 12px;
+     position: absolute;
+     bottom: 8px;
+     width: 100%;
+     text-align: center;
+ }
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active,
+ .dot:hover {
+     background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fade {
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+
+
+ @keyframes fade {
+     from {
+         opacity: .4
+     }
+
+     to {
+         opacity: 1
+     }
+ }
+
+
+
+
+ @media only screen and (max-width: 1200px) {
+
+     .projectTable {
+         display: block;
+         width: 100%;
+     }
+
+     .projectTable-Row {
+         display: block;
+     }
+
+     .closeProjectButton {
+         margin: 100px 0 100px 0;
+     }
+
+     /*projectDescriptions*/
+
+     .projectinfobox1,
+     .projectinfobox2 {
+         display: block;
+     }
+
+     .projectinfobox2 {
+         display: block;
+     }
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 601px) {
+
+     .prev,
+     .next,
+     .text {
+         font-size: 11px
+     }
+
+     #nhbrcDepth,
+     #homeProjectDepth,
+     #configuratorDepth,
+     #showcaseHomeDepth,
+     #productDepth,
+     #producyDisplayDepth {
+         margin: -780px 0 0 -200px;
+     }
+
+ }
