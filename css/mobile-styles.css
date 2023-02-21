@@ -1,7 +1,7 @@
 
 
  /* ------------- TABLET MODE ------------- */
- @media only screen and (max-width:601px) {
+ @media only screen and (max-width:500px) {
 
     /*TABLET MODE 601x962 */
     /*MOBILE MODE 360x640 - 414x896 */
@@ -25,11 +25,10 @@
     }
 
     #bodyBox {
-        margin: 30px 100px 0px 90px;
+        margin: 5px 100px 0px 90px;
         padding: 90px 80px 55px 10px;
-        height: 710px;
-        width: 400px;
-        background-image: url("./media/my.jpg");
+        height: 80px;
+        width: 80px;
         max-width: 400px;
         transition: all 1s linear;
     }
