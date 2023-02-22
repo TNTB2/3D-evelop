@@ -5,6 +5,10 @@
     /*MOBILE MODE 360x640 - 414x896 */
     /*DESKTOP MODE 1024X768 - 1920X1080 */
 
+    h1 {
+        margin-top: 50px;
+    }
+
     h2 {
         text-align: center;
     }
@@ -13,39 +17,62 @@
         text-align: left;
     }
 
+    .tabDescRow {
+        width: 300px;
+    }
 
     .ImageSection {
         display: none;
     }
 
     h5 {
-        margin-top: -20px;
+        margin-top: -15px;
     }
 
     #bodyBox {
-        height: 710px;
-        margin: 30px 150px 0px 0px;
-        padding: 90px 0px 60px 0px;
+        height: 850px;
+        width: 450px;
+        margin: 30px 150px 0px -50px;
+        padding: 0px 40px 0px 40px;
         background-image: url("./media/my.jpg");
     }
 
+    /*
+    #bodyBox {
+        height: 710px;
+        width: 400px;
+        margin: 30px 150px 0px 0px;
+        padding: 90px 180px 60px 180px;
+        background-image: url("./media/my.jpg");
+    }
+    */
+
     .hide,
     #navBox {
-        max-width: 130px !important;
+        max-width: 10px !important;
     }
 
 
     #navBox {
-        margin: 0% 20% 0% 50%;
+        margin: 135px 200px 0 200px;
+    }
+
+
+    .previousCV button {
+        margin-bottom: 180px;
+    }
+    
+    .nextCV button {
+        margin-top: 180px;
     }
 
 
     .hideIt {
-        display: block;
+        display: none;
     }
 
     .bodyCap {
-        max-width: 800px;
+        max-width: 100%;
         margin: 0px 0px 0px -50px;
     }
 
@@ -72,7 +99,8 @@ margin: 0px 0px 0px 50px;
     }
 
     #burgerNav {
-        display: none;
+        display: flex;
+        margin: 35px 0 0 55px;
     }
 
     .imageBox {
@@ -80,7 +108,7 @@ margin: 0px 0px 0px 50px;
     }
 
     .informationContent {
-        padding: 0px 70px 10px 100px;
+        padding: 0px 30px 10px 40px;
         margin: 20px 0px 0px 50px;
         height: 900px;
         /* top right bot left*/
@@ -109,7 +137,7 @@ margin: 0px 0px 0px 50px;
     #showcaseHomeDepth,
     #productDepth,
     #producyDisplayDepth {
-        margin: -800px 0 0 -140px;
+        margin: -880px 0 0 -80px;
         width: 500px;
     }
 
@@ -124,6 +152,9 @@ margin: 0px 0px 0px 50px;
         text-align: center;
     }
 
+
+
+
     .slideshow-container {
         width: 350px;
         margin-left: -15px;
@@ -131,6 +162,12 @@ margin: 0px 0px 0px 50px;
 
     #about p {
         width: 320px;
+    }
+
+
+
+    .containResume {
+        margin-left: -5px;
     }
 
 

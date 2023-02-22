@@ -11,16 +11,16 @@
 
      facebookBtn.setAttribute(
          "href",
-         `https://www.facebook.com/sharer.php?u=${postUrl}`
+         `https://www.facebook.com/sharer.php?u=${"httpstntb2.github.ioTNTB2.github.io-#"}`
      );
      linkedInBtn.setAttribute(
          "href",
-         `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`
+         `https://www.linkedin.com/shareArticle?url=${"httpstntb2.github.ioTNTB2.github.io-#"}&title=${"3d-Designer/Tiaan-Bezuidenhout"}`
      );
 
      whatsappBtn.setAttribute(
          "href",
-         `https://wa.me/?text=${postTitle} ${postUrl}`
+         `https://wa.me/?text=${"3d-Designer/Tiaan-Bezuidenhout"} ${"httpstntb2.github.ioTNTB2.github.io-#"}`
      );
  }
 
