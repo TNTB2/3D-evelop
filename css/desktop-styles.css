@@ -617,6 +617,23 @@ a {
         max-width: 1400px;
     }
 
+    .ImageSection {
+        margin: 15px 100px 50px 160px;
+        padding: 0px 0px 125px 250px;
+    }
+
+    .imageBox {
+        margin: 710px 0px -100px -250px;
+    }
+
+    .informationContent {
+        padding: 0px 70px 10px 100px;
+        margin: 50px 50px 50px 380px;
+    }
+
+
+
+
 
     /*PROJECTS*/
 
