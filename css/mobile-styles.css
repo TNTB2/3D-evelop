@@ -7,7 +7,6 @@
 
     h2 {
         text-align: center;
-        color: pink;
     }
 
     .tabDescRow h2 {
@@ -28,13 +27,11 @@
         margin: 30px 150px 0px 0px;
         padding: 90px 0px 60px 0px;
         background-image: url("./media/my.jpg");
-        transition: all 1s linear;
     }
 
     .hide,
     #navBox {
         max-width: 130px !important;
-        transition: all 0s linear;
     }
 
 

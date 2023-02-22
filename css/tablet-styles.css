@@ -37,7 +37,6 @@
     .hide,
     #navBox {
         max-width: 20px !important;
-        transition: all 0s linear;
     }
 
 
