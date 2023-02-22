@@ -1,7 +1,5 @@
-
-
- /* ------------- Mobile MODE ------------- */
- @media only screen and (max-width:500px) {
+/* ------------- Mobile MODE ------------- */
+@media only screen and (max-width:500px) {
 
     /*TABLET MODE 601x962 */
     /*MOBILE MODE 360x640 - 414x896 */
@@ -25,28 +23,27 @@
     }
 
     #bodyBox {
-        margin: 5px 100px 0px 90px;
-        padding: 90px 80px 55px 10px;
-        height: 80px;
-        width: 80px;
-        max-width: 400px;
+        height: 710px;
+        margin: 30px 150px 0px 0px;
+        padding: 90px 0px 60px 0px;
+        background-image: url("./media/my.jpg");
         transition: all 1s linear;
     }
 
     .hide,
     #navBox {
-        max-width: 20px !important;
+        max-width: 130px !important;
         transition: all 0s linear;
     }
 
 
     #navBox {
-        margin: 0% 400% 0% 50%;
+        margin: 0% 20% 0% 50%;
     }
 
 
     .hideIt {
-        display: none;
+        display: block;
     }
 
     .bodyCap {
@@ -57,16 +54,16 @@
 
 
     /*
-    .homebtn,
-    .resumebtn,
-    .projectsbtn,
-    .contactbtn {
-        margin: 0% 400% 0% 50%;
-        padding: 0% 400% 0% 50%;
-    }
-    #navBox {
-        margin: 0px 0px 0px 50px;
-    }*/
+.homebtn,
+.resumebtn,
+.projectsbtn,
+.contactbtn {
+margin: 0% 400% 0% 50%;
+padding: 0% 400% 0% 50%;
+}
+#navBox {
+margin: 0px 0px 0px 50px;
+}*/
 
     .previousCV {
         margin: -60px 0 40px 0;
@@ -77,35 +74,8 @@
     }
 
     #burgerNav {
-        display: block;
-        margin: 430px 0 0 120px;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        padding: 3px 23px 33px 13px;
-        position: absolute;
-        box-shadow: 0 0 50px rgb(3, 186, 192);
-        background-color: rgba(3, 186, 192, 0.466);
-        border: 2px solid white;
+        display: none;
     }
-
-    #burgerNav:hover {
-        box-shadow: 0 0 50px rgb(255, 255, 255);
-        background-color: rgba(255, 255, 255, 0.349);
-        border: 2px solid rgb(3, 186, 192, 0.5);
-    }
-
-
-    #burgerNav a {
-        margin: 0 0 10px -3px;
-        color: white;
-        font-size: 2em;
-    }
-
-    #burgerNav a:hover {
-        color: rgb(3, 186, 192);
-    }
-
 
     .imageBox {
         margin: 750px 0% 0% -290px;
@@ -113,13 +83,89 @@
 
     .informationContent {
         padding: 0px 70px 10px 100px;
-        margin: 50px 50px 50px 150px;
-        height: 800px;
+        margin: 20px 0px 0px 50px;
+        height: 900px;
         /* top right bot left*/
     }
 
     .deadLinks {
         margin: 20px 0% 0% -40px;
+    }
+
+
+
+
+    .overflowingGraphs {
+        height: 410px;
+    }
+
+    .progress-bar {
+        width: 95%;
+    }
+
+
+
+    #nhbrcDepth,
+    #homeProjectDepth,
+    #configuratorDepth,
+    #showcaseHomeDepth,
+    #productDepth,
+    #producyDisplayDepth {
+        margin: -800px 0 0 -140px;
+        width: 500px;
+    }
+
+
+    .mobileProjects {
+        height: 640px;
+    }
+
+    .projectinfobox1 {
+        width: 320px;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+    .slideshow-container {
+        width: 350px;
+        margin-left: -15px;
+    }
+
+    #about p {
+        width: 320px;
+    }
+
+
+
+    .textBtn {
+        margin: 40px 0 20px 0;
+    }
+
+    .previousTabText,
+    .nextTabText {
+        position: absolute;
+        top: 25%;
+        padding-top: 16px;
+    }
+
+    .nextTabText {
+        margin: -0px 0 0 100px;
+    }
+
+    .previousTabText {
+        margin: -0px 0 0 -120px;
+    }
+
+
+
+    #about {
+        height: 830px;
+        overflow: scroll;
+        /* top right bot left*/
+    }
+
+    #about::-webkit-scrollbar {
+        display: none;
     }
 
 }
