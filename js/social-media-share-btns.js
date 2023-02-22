@@ -7,7 +7,7 @@
  function init() {
 
      let postUrl = encodeURI(document.location.href);
-     let postTitle = encodeURI("Hi everyone, please check this out: ");
+     let postTitle = encodeURI("Check out this 3D-Developer's art-works and useful Developer-Level-skills that I found: ");
 
      facebookBtn.setAttribute(
          "href",
