@@ -713,7 +713,7 @@ a {
     /*---------------create a series of buttons to scroll through that when hovered or clicked on, displays the slider text---------------------------------------------*/
 
     .tabTextBtns {
-        display: block;
+        display: table-row;
         margin-top: 20px;
     }
 
