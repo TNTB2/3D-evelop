@@ -108,8 +108,8 @@ margin: 0px 0px 0px 50px;
     }
 
     .informationContent {
-        padding: 0px 30px 10px 40px;
-        margin: 20px 0px 0px 50px;
+        padding: 0px 0px 10px 40px;
+        margin: 20px 10px 0px 50px;
         height: 900px;
         /* top right bot left*/
     }
@@ -161,7 +161,7 @@ margin: 0px 0px 0px 50px;
     }
 
     #about p {
-        width: 320px;
+        width: 300px;
     }
 
 
