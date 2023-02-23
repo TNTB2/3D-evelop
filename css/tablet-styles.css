@@ -1,7 +1,5 @@
-
-
- /* ------------- TABLET MODE ------------- */
- @media only screen and (max-width:601px) {
+/* ------------- TABLET MODE ------------- */
+@media only screen and (max-width:900px) {
 
     /*TABLET MODE 601x962 */
     /*MOBILE MODE 360x640 - 414x896 */
@@ -29,9 +27,10 @@
         padding: 90px 80px 55px 10px;
         height: 710px;
         width: 400px;
-        background-image: url("./media/my.jpg");
         max-width: 400px;
         transition: all 1s linear;
+        background-color: rgba(3, 186, 192, 0.5);
+        background-image: url("./media/my.jpg"); /*---------------------This line of code needs a look at---------------------*/
     }
 
     .hide,
@@ -116,6 +115,11 @@
         margin: 50px 50px 50px 150px;
         height: 800px;
         /* top right bot left*/
+    }
+
+    .containResume {
+        width: 280px;
+        margin-left: -10px;
     }
 
     .deadLinks {

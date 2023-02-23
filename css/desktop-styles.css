@@ -55,6 +55,7 @@ h5 {
     height: 710px;
     position: absolute;
     width: 40px;
+    background-image: url("./media/my.jpg");
 }
 
 .bodyCap {
@@ -627,7 +628,7 @@ a {
     }
 
     .informationContent {
-        padding: 0px 70px 10px 100px;
+        padding: 0px 20px 10px 50px;
         margin: 50px 50px 50px 380px;
     }
 
@@ -723,7 +724,7 @@ a {
     /*RESUME*/
 
     .containResume {
-        width: 100%;
+        width: 90%;
         margin-left: 10px;
     }
 
@@ -731,8 +732,13 @@ a {
     /*---------------create a series of buttons to scroll through that when hovered or clicked on, displays the slider text---------------------------------------------*/
 
     .tabTextBtns {
-        display: table-row;
+        display: flex;
+        flex-direction: row;
         margin-top: 20px;
+        align-content: center;
+        margin-left: 40%;
+        transform: translateX(-50%);
+        width: 200px;
     }
 
     .textBtn {
@@ -765,8 +771,7 @@ a {
     .previousTabText,
     .nextTabText {
         cursor: pointer;
-        position: absolute;
-        top: 37%;
+        /*position: absolute; */
         width: auto;
         padding-top: 16px;
         color: white;
@@ -778,11 +783,11 @@ a {
     }
 
     .nextTabText {
-        margin: -80px 0 0 100px;
+        margin: 10px 0 0 50px;
     }
 
     .previousTabText {
-        margin: -80px 0 0 -120px;
+        margin: 10px 50px 0 0;
     }
 
 
@@ -799,8 +804,5 @@ a {
         margin: 0 0 0 -175px;
         opacity: 0.8;
     }
-
-
-
 
 }

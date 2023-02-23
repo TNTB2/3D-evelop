@@ -176,19 +176,13 @@ margin: 0px 0px 0px 50px;
         margin: 40px 0 20px 0;
     }
 
-    .previousTabText,
-    .nextTabText {
-        position: absolute;
-        top: 25%;
-        padding-top: 16px;
-    }
 
     .nextTabText {
-        margin: -0px 0 0 100px;
+        margin: 50px 0 0 50px;
     }
 
     .previousTabText {
-        margin: -0px 0 0 -120px;
+        margin: 50px 50px 0 0;
     }
 
 
