@@ -739,6 +739,8 @@ a {
         margin-left: 40%;
         transform: translateX(-50%);
         width: 200px;
+        position: relative;
+        z-index: 9;
     }
 
     .textBtn {
