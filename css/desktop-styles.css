@@ -54,6 +54,7 @@ h5 {
     padding: 50px 10px 50px 10px;
     height: 710px;
     position: absolute;
+    z-index: 2;
     width: 40px;
     background-image: url("./media/my.jpg");
 }
@@ -739,8 +740,6 @@ a {
         margin-left: 40%;
         transform: translateX(-50%);
         width: 200px;
-        position: relative;
-        z-index: 9;
     }
 
     .textBtn {
