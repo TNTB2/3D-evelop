@@ -804,6 +804,14 @@ a {
         height: 250px;
         margin: 0 0 0 -175px;
         opacity: 0.8;
+        overflow: scroll;
+        z-index: 7;
+    }
+
+    #tabResumeTxt1::-webkit-scrollbar,
+    #tabResumeTxt2::-webkit-scrollbar,
+    #tabResumeTxt3::-webkit-scrollbar {
+        display: none;
     }
 
 }
