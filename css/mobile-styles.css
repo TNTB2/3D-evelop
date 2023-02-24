@@ -61,7 +61,7 @@
     .previousCV button {
         margin-bottom: 180px;
     }
-    
+
     .nextCV button {
         margin-top: 180px;
     }
@@ -138,7 +138,7 @@ margin: 0px 0px 0px 50px;
     #tabResumeTxt3 {
         padding: 30px;
         width: 280px;
-        height: 85%;
+        height: 100%;
         margin: 0 0 0 -35px;
     }
 
@@ -151,13 +151,13 @@ margin: 0px 0px 0px 50px;
     #productDepth,
     #producyDisplayDepth {
         margin: -880px 0 0 -100px;
-        width: 500px;
+        width: 300px;
     }
 
 
     .mobileProjects {
         height: 640px;
-        margin: 0 30px 0 -30px;
+        margin: 0 30px 0 -40px;
     }
 
     .projectinfobox1 {
@@ -170,17 +170,29 @@ margin: 0px 0px 0px 50px;
 
 
     .slideshow-container {
-        width: 350px;
+        width: 300px;
         margin-left: -15px;
     }
 
+    .projectinfobox1,
+    .projectinfobox2 {
+        width: 250px;
+    }
+
+    .projectinfobox2 {
+        margin-left: -20px;
+    }
+
+
+
     #about p {
-        width: 290px;
+        width: 270px;
+        padding-right: 20px;
     }
 
 
     .containResume {
-        margin-left: -5px;
+        margin: 0 25px 0 -15px;
         padding-right: 10px;
     }
 
