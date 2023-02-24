@@ -54,7 +54,7 @@ h5 {
     padding: 50px 10px 50px 10px;
     height: 710px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 40px;
     background-image: url("./media/my.jpg");
 }
