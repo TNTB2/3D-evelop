@@ -165,7 +165,8 @@ a {
     padding: 10px;
 }
 
-.informationContent {
+#informationContent {
+    transition: all 1s ease;
     background-color: rgba(10, 10, 10, 0.74);
     padding: 0px 70px 10px 100px;
     margin: 50px 50px 50px 500px;
@@ -174,8 +175,12 @@ a {
     /* top right bot left*/
 }
 
-.informationContent::-webkit-scrollbar {
+#informationContent::-webkit-scrollbar {
     display: none;
+}
+
+.toggleInfoDefault {
+    width: 10px;
 }
 
 
@@ -200,7 +205,7 @@ a {
 
 
 #about {
-    display: block;
+    display: none;
 }
 
 
@@ -628,11 +633,12 @@ a {
         margin: 710px 0px -100px -250px;
     }
 
-    .informationContent {
+    #informationContent {
         padding: 0px 20px 10px 50px;
         margin: 50px 50px 50px 380px;
     }
 
+    
 
 
 
