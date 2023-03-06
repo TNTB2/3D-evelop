@@ -157,12 +157,34 @@ a {
     display: table-row;
 }
 
+.blue {
+    color: white;
+}
+
 .imageBox {
     background-color: rgba(10, 10, 10, 0.74);
     text-align: center;
-    margin: 710px 0px -100px -325px;
+    margin: 710px 0px -100px -320px;
     position: absolute;
     padding: 10px;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 600px;
+    transition: all 1s ease-out;
+}
+
+.imageBox:hover {
+    background-color: black;
+    height: 750px;
+    margin-top: 600px;
+    transform: translateY(-550px);
+    transition: all 1s ease-out;
+    overflow: scroll;
+}
+
+.imageBox::-webkit-scrollbar {
+    display: none;
 }
 
 #informationContent {
@@ -630,7 +652,18 @@ a {
     }
 
     .imageBox {
-        margin: 710px 0px -100px -250px;
+        margin: 710px 0px -100px -235px;
+        padding: 10px;
+        width: 200px;
+        height: 230px;
+        margin-top: 600px;
+    }
+
+    .imageBox:hover {
+        background-color: black;
+        height: 750px;
+        margin-top: 600px;
+        transform: translateY(-550px);
     }
 
     #informationContent {
@@ -638,7 +671,7 @@ a {
         margin: 50px 50px 50px 380px;
     }
 
-    
+
 
 
 
