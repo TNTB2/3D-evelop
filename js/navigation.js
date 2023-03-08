@@ -15,6 +15,13 @@ function burgerFunction() {
     //var tabNav = navLinks.style.display;
     //navLinks.style.display = "block";
 
+    let imageBox = document.getElementById("ImageSection");
+    var imgDisplay = imageBox.style.display;
+    
+    setTimeout(() => {
+        imageBox.style.display = "none";
+    }
+        , 1000);
 
     if (navLinks.classList.contains('hide') && navigationId.classList.contains('hideIt')) {  //&& imageText.classList.contains('hideIt')
         navLinks.classList.remove('hide');

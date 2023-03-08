@@ -22,7 +22,10 @@
     }
 
     .ImageSection {
-        display: none;
+        margin: 30px 0 0 100px;
+        background-image: url("./media/bgImages/240_F_151627953_csDyQk5mm5UgwqxdVFR4QSjd9tNjmjSF.jpg");/*---------------------This line of code needs a look at---------------------*/
+        z-index: -0.1;
+        height: 730px;
     }
 
     h5 {
@@ -107,7 +110,7 @@ margin: 0px 0px 0px 50px;
     }
 
     .imageBox {
-        margin: 750px 0% 0% -290px;
+        margin: 560px 0 0 -235px;
     }
 
     #informationContent {

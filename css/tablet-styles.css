@@ -15,7 +15,10 @@
 
 
     .ImageSection {
-        display: none;
+        margin: 30px 0 0 200px;
+        background-image: url("./media/bgImages/240_F_151627953_csDyQk5mm5UgwqxdVFR4QSjd9tNjmjSF.jpg");/*---------------------This line of code needs a look at---------------------*/
+        z-index: -0.1;
+        height: 730px;
     }
 
     h5 {
@@ -29,7 +32,7 @@
         width: 400px;
         max-width: 400px;
         transition: all 1s linear;
-        background-color: rgba(3, 186, 192, 0.5);
+        background-color: rgb(4, 105, 109);
         background-image: url("./media/my.jpg"); /*---------------------This line of code needs a look at---------------------*/
     }
 
@@ -108,7 +111,7 @@
 
 
     .imageBox {
-        margin: 750px 0% 0% -290px;
+        margin: 570px 0 0 -235px;
     }
 
     #informationContent {
