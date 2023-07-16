@@ -706,14 +706,50 @@
                     <hr>
                     <br>
 
-                    <h2>References</h2>
-                    <br>
-                    <div>
-                        <h3>Nico (<span>Ignition-Marketing & CTU</span>): <span>072 069 6791</span></h3>
-                        <h3>Jovanah (<span>Ignition-Marketing & CTU</span>): <span>072 266 6111 </span></h3>
-                        <h3>Nomi (<span>The Converted Click</span>): <span>081 575 4357</span></h3>
-                    </div>
+                    <div class="formBlock">
 
+                        <h3>Fill in the below form to establish communication & I'll get back to you:</h3>
+                        <br>
+
+                        <!--this form sends an email to my direct email adress while hiding my naked email adress-->
+                        <form class="form" action="https://formsubmit.co/2159ab33c05892f928982819b08ec988"
+                              method="POST">
+                            <!--this is the site's address:: https://tntb2.github.io/formsubmition/form.html-->
+                            <!--HoneyPot-->
+                            <input type="text" name="_honey" style="display: none;">
+
+                            <!--Disable captcha-->
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <!--adding a success page after form subpition-->
+                            <input type="hidden" name="_next"
+                                   value="https://tntb2.github.io/formsubmition/formsubmition.html">
+
+                            <label>Name & surname*</label>
+                            <br>
+                            <input type="text" class="name" name="Name&nbsp;&&nbsp;Last&nbsp;Name"
+                                   placeholder="John Doe" required>
+                            <br><br>
+                            <label>Email*</label>
+                            <br>
+                            <input type="email" class="email" name="E-mail" placeholder="JohnDoe@gmail.com" required>
+                            <br><br>
+                            <label>Mobile number*</label>
+                            <br>
+                            <input type="number" class="number" name="Phone" placeholder="0836057751" required>
+                            <br><br>
+                            <label>Notes / comments*</label>
+                            <br>
+                            <textarea type="textarea" class="comment" name="Comment,&nbsp;Questions "
+                                      placeholder="In short, leave your request here..." required></textarea>
+                            <br><br>
+
+                            <input type="reset" class="clear" value="Clear">\
+                            <button class="subm" type="submit" value="Send">Submit</button>
+
+                        </form>
+                    </div>
+                    <br>
                     <br>
                     <hr>
                     <br>
