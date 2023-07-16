@@ -626,6 +626,10 @@ a {
 form label {
     color: rgb(255, 255, 255);
 }
+form p {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
 
 form .subm,
 form .clear {
