@@ -1,0 +1,235 @@
+/* ------------- Mobile MODE ------------- */
+@media only screen and (max-width:500px) {
+
+    /*TABLET MODE 601x962 */
+    /*MOBILE MODE 360x640 - 414x896 */
+    /*DESKTOP MODE 1024X768 - 1920X1080 */
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .tabDescRow h2 {
+        text-align: left;
+    }
+
+    .tabDescRow {
+        width: 300px;
+    }
+
+    .ImageSection {
+        margin: 30px 0 0 100px;
+        background-image: url("./media/bgImages/240_F_151627953_csDyQk5mm5UgwqxdVFR4QSjd9tNjmjSF.jpg");/*---------------------This line of code needs a look at---------------------*/
+        z-index: -0.1;
+        height: 725px;
+    }
+
+    h5 {
+        margin-top: -15px;
+    }
+
+    #bodyBox {
+        height: 850px;
+        width: 450px;
+        margin: 30px 150px 0px -50px;
+        padding: 0px 40px 0px 40px;
+        background-image: url("./media/myRender3.png");
+    }
+
+    /*
+    #bodyBox {
+        height: 710px;
+        width: 400px;
+        margin: 30px 150px 0px 0px;
+        padding: 90px 180px 60px 180px;
+        background-image: url("./media/my.jpg");
+    }
+    */
+
+    .hide,
+    #navBox {
+        max-width: 10px !important;
+    }
+
+
+    #navBox {
+        margin: 135px 200px 0 200px;
+    }
+
+
+    .previousCV button {
+        margin-bottom: 180px;
+    }
+
+    .nextCV button {
+        margin-top: 180px;
+    }
+
+
+    .hideIt {
+        display: none;
+    }
+
+    .bodyCap {
+        max-width: 100%;
+        margin: 0px 0px 0px -50px;
+    }
+
+
+    #contact {
+        margin-right: 50px;
+    }
+
+    /*
+.homebtn,
+.resumebtn,
+.projectsbtn,
+.contactbtn {
+margin: 0% 400% 0% 50%;
+padding: 0% 400% 0% 50%;
+}
+#navBox {
+margin: 0px 0px 0px 50px;
+}*/
+
+    .previousCV {
+        margin: -60px 0 40px 0;
+    }
+
+    .nextCV {
+        margin: 40px 0 0px 0;
+    }
+
+    #burgerNav {
+        display: flex;
+        margin: 35px 0 0 55px;
+    }
+
+    
+    .imageBox {
+        margin: 570px 0 0 -225px;
+        padding: 0 0 50px 0;
+    }
+
+    #informationContent {
+        padding: 0px 0px 10px 40px;
+        margin: 20px 10px 0px 50px;
+        height: 900px;
+        /* top right bot left*/
+    }
+
+    .deadLinks {
+        margin: 20px 0% 0% -40px;
+    }
+
+
+
+
+    .overflowingGraphs {
+        height: 410px;
+    }
+
+    .progress-bar {
+        width: 95%;
+    }
+
+
+    #tabResumeTxt1,
+    #tabResumeTxt2,
+    #tabResumeTxt3 {
+        padding: 30px;
+        width: 280px;
+        height: 100%;
+        margin: 0 0 0 -35px;
+    }
+
+
+
+    #nhbrcDepth,
+    #homeProjectDepth,
+    #configuratorDepth,
+    #showcaseHomeDepth,
+    #productDepth,
+    #producyDisplayDepth {
+        margin: -880px 0 0 -100px;
+        width: 300px;
+    }
+
+
+    .mobileProjects {
+        height: 640px;
+        margin: 0 30px 0 -40px;
+    }
+
+    .projectinfobox1 {
+        width: 320px;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+
+    .projectDetails {
+        padding-right: 50px;
+    }
+
+    .slideshow-container {
+        width: 300px;
+        margin-left: -15px;
+    }
+
+    .projectinfobox1,
+    .projectinfobox2 {
+        width: 260px;
+        text-align: center;
+        padding-right: 10px;
+        margin-left: -30px;
+    }
+
+
+
+    #about p {
+        width: 270px;
+        padding-right: 20px;
+    }
+
+
+    .containResume {
+        margin: 0 25px 0 -15px;
+        padding-right: 10px;
+    }
+
+
+
+    .textBtn {
+        margin: 40px 0 20px 0;
+        width: 80px;
+        height: 80px;
+        padding: 30px 20px 10px 20px;
+    }
+
+
+    .nextTabText {
+        margin: 50px 0 0 50px;
+    }
+
+    .previousTabText {
+        margin: 50px 50px 0 0;
+    }
+
+
+
+    #about {
+        height: 830px;
+        overflow: scroll;
+        /* top right bot left*/
+    }
+
+    #about::-webkit-scrollbar {
+        display: none;
+    }
+
+}

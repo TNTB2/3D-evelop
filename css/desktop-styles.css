@@ -1,0 +1,901 @@
+body {
+    background: #1CCDD5;
+    background-image: url("./media/orgnl.png");
+    background-color: rgba(28, 205, 213, 0.0);
+    background-size: auto;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 400%;
+    margin: -0px 0px -30px 0px;
+    color: rgb(3, 186, 192);
+    cursor: default;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    cursor: default;
+    line-height: 1.9;
+}
+
+.deadLinks a,
+h2,
+h3,
+h4 {
+    text-decoration: none;
+    color: rgb(3, 186, 192);
+    cursor: default;
+}
+
+.deadLinks {
+    margin: 20px 0% 0% -40px;
+}
+
+.textSlider span {
+    color: rgb(3, 186, 192);
+}
+
+
+span {
+    color: white;
+}
+
+h5 {
+    color: rgb(3, 186, 192);
+    font-weight: lighter;
+    margin-top: -20px;
+}
+
+#bodyBox {
+    background-color: rgba(10, 10, 10, 0.74);
+    /*rgba(28, 204, 213, 0.753)*/
+    margin: 50px 0px 0px 100px;
+    padding: 50px 10px 50px 10px;
+    height: 710px;
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    background-image: url("./media/myRender3.png");
+}
+
+.bodyCap {
+    max-width: 1400px;
+    margin: 0 2% 0 2%;
+    /*left: 50%;
+    transform: translateX(-50%);*/
+}
+
+#navBox {
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+#navBox ul {
+    list-style-type: none;
+    margin: 0% 0% 0% -115%;
+    text-align: center;
+}
+
+.previousCV button {
+    transform: rotate(180deg);
+    margin: -30px 0 225px 0;
+    color: rgb(3, 186, 192);
+    background-color: rgba(10, 10, 10, 0);
+    border: solid 2px rgba(3, 186, 192, 0);
+    font-size: 2em;
+}
+
+.nextCV button {
+    margin-top: 225px;
+    color: rgb(3, 186, 192);
+    background-color: rgba(10, 10, 10, 0);
+    border: solid 2px rgba(3, 186, 192, 0);
+    font-size: 2em;
+}
+
+.previousCV button:hover {
+    color: white;
+}
+
+.nextCV button:hover {
+    color: white;
+}
+
+/*#tabNavBox {
+    display: none;
+}*/
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homebtn,
+.resumebtn,
+.projectsbtn,
+.contactbtn {
+    color: white;
+    background-color: rgba(10, 10, 10, 0.74);
+    border-radius: 50%;
+    padding: 20px 5px 20px 5px;
+    border: solid 2px rgb(3, 186, 192);
+    margin: 0 0 0 -7px;
+}
+
+.homebtn:hover,
+.resumebtn:hover,
+.projectsbtn:hover,
+.contactbtn:hover {
+    box-shadow: 0 0 70px rgb(3, 186, 192);
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid rgb(3, 186, 192, 0.5);
+}
+
+.activeNav {
+    box-shadow: 0 0 50px rgb(3, 186, 192);
+    background-color: rgba(3, 186, 192, 0.548);
+    border: 2px solid rgb(3, 186, 192, 0.5);
+}
+
+
+#burgerNav {
+    display: none;
+}
+
+.ImageSection {
+    background-image: url("./media/my.jpg");
+    vertical-align: right;
+    margin: 15px 100px 50px 160px;
+    padding: 0px 0px 125px 370px;
+    height: 765px;
+    position: absolute;
+    display: table-row;
+}
+
+.blue {
+    color: white;
+}
+
+.imageBox {
+    background-color: rgba(10, 10, 10, 0.74);
+    text-align: center;
+    margin: 710px 0px -100px -320px;
+    position: absolute;
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 600px;
+    transition: all 1s ease-out;
+}
+
+.imageBox:hover {
+    background-color: black;
+    height: 750px;
+    margin-top: 600px;
+    transform: translateY(-550px);
+    transition: all 1s ease-out;
+    overflow: scroll;
+}
+
+.imageBox::-webkit-scrollbar {
+    display: none;
+}
+
+#informationContent {
+    transition: all 1s ease;
+    background-color: rgba(10, 10, 10, 0.74);
+    padding: 0px 70px 10px 100px;
+    margin: 50px 50px 50px 500px;
+    height: 800px;
+    overflow: scroll;
+    /* top right bot left*/
+}
+
+#informationContent::-webkit-scrollbar {
+    display: none;
+}
+
+.toggleInfoDefault {
+    width: 10px;
+}
+
+
+.tabinfobox {
+    display: none;
+}
+
+.infobox1,
+.infobox2 {
+    display: table-cell;
+    padding: 20px;
+}
+
+.serviceTable {
+    display: table;
+    width: 100%;
+}
+
+.serviceTableRow {
+    display: table-row;
+}
+
+
+#about {
+    display: none;
+}
+
+
+
+
+
+
+
+/*RESUME
+
+#resumeSkillset {
+    width: 0%;
+}
+*/
+.containResume {
+    width: 110%;
+    overflow: scroll;
+    margin: 0 -20px 0 -40px;
+}
+
+.containResume::-webkit-scrollbar {
+    display: none;
+}
+
+#tabResumeTxt1,
+#tabResumeTxt2,
+#tabResumeTxt3 {
+    display: none;
+}
+
+.overflowingGraphs {
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    margin-top: -20px;
+}
+
+.overflowingGraphs::-webkit-scrollbar {
+    display: none;
+}
+
+
+.textSlider {
+    padding: 0px 50px 0px 50px;
+}
+
+
+.textSliderContainer {
+    max-width: 1000px;
+    position: relative;
+    overflow: scroll;
+    height: 200px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.textSliderContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+.previousText,
+.nextText {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding-top: 16px;
+    margin-top: -40px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.nextText {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.progress-bar {
+    background-color: white;
+    width: 98%;
+    height: 12px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    /*background-color: #1c87c9;*/
+    width: 0%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress-bar div span {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: right;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    display: flex;
+    margin: -17px -10px 0px 0px;
+}
+
+.html {
+    background: rgb(3, 186, 192);
+    animation: html 1s linear forwards;
+}
+
+.javaScript {
+    background: rgb(3, 186, 192);
+    animation: javaScript 1s linear forwards;
+}
+
+.engine {
+    background: rgb(3, 186, 192);
+    animation: engine 1s linear forwards;
+}
+
+.blender {
+    background: rgb(3, 186, 192);
+    animation: blender 1s linear forwards;
+}
+
+.wordpres {
+    background: rgb(3, 186, 192);
+    animation: wordpres 1s linear forwards;
+}
+
+.photoshop {
+    background: rgb(3, 186, 192);
+    animation: photoshop 1s linear forwards;
+}
+
+.python {
+    background: rgb(3, 186, 192);
+    animation: python 1s linear forwards;
+}
+
+.mixology {
+    background: rgb(3, 186, 192);
+    animation: mixology 1s linear forwards;
+}
+
+.teamwork {
+    background: rgb(3, 186, 192);
+    animation: teamwork 1s linear forwards;
+}
+
+.html,
+.javaScript,
+.engine,
+.blender,
+.wordpres,
+.photoshop,
+.python,
+.mixology,
+.teamwork,
+.progress-bar span {
+    border: 2px solid rgb(3, 186, 192);
+}
+
+@keyframes html {
+    100% {
+        width: 95%;
+    }
+}
+
+
+@keyframes javaScript {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes engine {
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blender {
+    100% {
+        width: 98%;
+    }
+}
+
+
+@keyframes wordpres {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes photoshop {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    100% {
+        width: 50%;
+    }
+}
+
+
+@keyframes mixology {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes teamwork {
+    100% {
+        width: 100%;
+    }
+}
+
+.tabTextBtns {
+    display: none;
+}
+
+#resumeSkillset {
+    display: none;
+}
+
+
+
+
+
+
+/*PROJECTS*/
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+    display: table-cell;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.project1 {
+    background-image: url("./3d-projects/nhbrc legos/background-image.png");
+}
+
+.project2 {
+    background-image: url("./3d-projects/personal models/background-image.png");
+}
+
+.project3 {
+    background-image: url("./3d-projects/configurators/background-image.png");
+}
+
+.project4 {
+    background-image: url("./3d-projects/trellidorShowcaseProject/background-image.png");
+}
+
+.project5 {
+    background-image: url("./3d-projects/product models/background-image.png");
+}
+
+.project6 {
+    background-image: url("./3d-projects/scene displays/background-image.png");
+}
+
+
+/*.project1 {
+    background-image: url("../Media/IMG_20180705_122925_806.jpg");
+}*/
+.row2 .column,
+.row4 .column {
+    margin: -35px 0px 0px 5px;
+}
+
+.row3 .column,
+.row4 .column,
+.row5 .column,
+.row6 .column {
+    margin-top: -50px;
+}
+
+
+.row2 .description1,
+.row4 .description3,
+.row6 .description5 {
+    margin: -35px 0px 0px -35px;
+}
+
+.row2 .description2,
+.row4 .description4,
+.row6 .description6 {
+    margin: -35px 0px 0px 20px;
+}
+
+.row2 .description1 h2,
+.row4 .description3 h2,
+.row6 .description5 h2,
+.row2 .description2 h2,
+.row4 .description4 h2,
+.row6 .description6 h2 {
+    font-size: xx-large;
+}
+
+.row1 .project1 h3,
+.row1 .project2 h3,
+.row3 .project3 h3,
+.row3 .project4 h3,
+.row5 .project5 h3,
+.row5 .project6 h3 {
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    display: table;
+    clear: both;
+    margin: 20px 0px 20px 20px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 10% 8% 10% 8%;
+    margin: 0px 10px -50px 10px;
+}
+
+.hoverEffect {
+    cursor: pointer;
+    padding: 35% 45% 35% 45%;
+    margin: -34% -27% -34% -27%;
+}
+
+.hoverEffect:hover {
+    transition: all 0.5s ease-out;
+    opacity: 0.6;
+    background-color: rgb(3, 186, 192);
+    padding: 35% 45% 35% 45%;
+    margin: -34% -27% -34% -27%;
+}
+
+.columnDesc {
+    float: left;
+    width: 40%;
+    padding: 0 0px 50px 45px;
+    margin: 0px 10px 50px 10px;
+}
+
+.column h3,
+.tabcolumn h3 {
+    color: white;
+}
+
+.row p {
+    margin-top: -10px;
+}
+
+.projectborder {
+    width: 105%;
+    height: 630px;
+    overflow: scroll;
+    margin-left: -30px;
+}
+
+.projectborder::-webkit-scrollbar {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+.mobileProjects {
+    display: none;
+}
+
+
+
+
+
+
+/*CONTACT*/
+
+#contact {
+    display: none;
+}
+
+form label {
+    color: rgb(255, 255, 255);
+}
+form p {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+form .subm,
+form .clear {
+    background-color: rgba(10, 10, 10, 0.336);
+    border-radius: 15%;
+    width: 50px;
+    height: 30px;
+    color: white;
+    margin: 10px 10px 0 0;
+    padding: 10px 60px 25px 20px;
+    box-shadow: 0 0 50px rgba(3, 186, 192, 0.589);
+    border: 2px solid rgb(3, 186, 192, 0.5);
+}
+
+    form .subm:hover,
+    form .clear:hover {
+        background-color: rgba(10, 10, 10, 0.336);
+        color: white;
+        box-shadow: 0 0 50px white;
+        border: 2px solid white;
+    }
+
+form .name,
+form .email,
+form .number,
+form .comment {
+    background-color: rgba(10, 10, 10, 0.336);
+    border-radius: 5%;
+    width: 70%;
+    height: 25%;
+    color: white;
+    margin: 10px 0 10px 10px;
+    padding: 10px 60px 25px 20px;
+    box-shadow: 0 0 50px rgba(3, 186, 192, 0.589);
+    border: 2px solid rgb(3, 186, 192, 0.5);
+}
+
+
+
+
+
+
+/*projectDescriptions*/
+
+.projectDescription {
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+}
+
+.projectImage {
+    background-image: url("./media/IMG_20180705_122925_806.jpg");
+}
+
+
+/* ------------- THIS IS FOR SWITCHING BETWEEN DESKTOP MODE AND TABLET MODE -----------------*/
+@media only screen and (max-width:1270px) {
+    .bodyCap {
+        max-width: 1400px;
+    }
+
+    .ImageSection {
+        margin: 15px 100px 50px 160px;
+        padding: 0px 0px 125px 250px;
+    }
+
+    .imageBox {
+        margin: 710px 0px -100px -235px;
+        padding: 10px;
+        width: 200px;
+        height: 230px;
+        margin-top: 600px;
+    }
+
+    .imageBox:hover {
+        background-color: black;
+        height: 750px;
+        margin-top: 600px;
+        transform: translateY(-550px);
+    }
+
+    #informationContent {
+        padding: 0px 20px 10px 50px;
+        margin: 50px 50px 50px 380px;
+    }
+
+
+
+
+
+
+    /*PROJECTS*/
+
+    .mobileProjects {
+        display: block;
+        width: 117%;
+        height: 600px;
+        overflow: scroll;
+        margin-left: -10px;
+    }
+
+    .mobileProjects::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6 {
+        display: block;
+    }
+
+    .tabrow {
+        padding: 50px;
+        margin: 40px -40px -10px 0;
+    }
+
+    .tabDescRow {
+        padding: 5px;
+    }
+
+    .tabcolumn {
+        padding: 5px;
+        margin-left: -30px;
+        text-align: center;
+    }
+
+    .hoverEffect {
+        padding: 78px 0px 78px 10px;
+        margin: -60px -45px -60px -25px;
+        width: 320px;
+    }
+
+    .hoverEffect:hover {
+        padding: 78px 0px 78px 10px;
+        margin: -60px -45px -60px -25px;
+        width: 320px;
+    }
+
+    .projectborder {
+        display: none;
+    }
+
+
+
+
+
+    /* ABOUT*/
+
+    .serviceTable {
+        display: block;
+    }
+
+    .serviceTableRow {
+        display: block;
+    }
+
+    .tabinfobox {
+        display: block;
+    }
+
+    .tabinfobox1,
+    .tabinfobox2 {
+        padding: 5px;
+    }
+
+    .infobox1,
+    .infobox2 {
+        display: none;
+    }
+
+
+
+
+    /*RESUME*/
+
+    .containResume {
+        width: 90%;
+        margin-left: 10px;
+    }
+
+
+    /*---------------create a series of buttons to scroll through that when hovered or clicked on, displays the slider text---------------------------------------------*/
+
+    .tabTextBtns {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        align-content: center;
+        margin-left: 40%;
+        transform: translateX(-50%);
+        width: 200px;
+    }
+
+    .textBtn {
+        background-color: rgba(10, 10, 10, 0.336);
+        border-radius: 50%;
+        /*border: 2px solid white;*/
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 50px rgba(3, 186, 192, 0.589);
+        border: 2px solid rgb(3, 186, 192, 0.5);
+    }
+
+    .textBtn:hover {
+        background-color: rgba(3, 186, 192, 0.589);
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.589);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .textBtn a {
+        color: white;
+    }
+
+
+    .textSliderContainer {
+        display: none;
+    }
+
+    .previousTabText,
+    .nextTabText {
+        cursor: pointer;
+        /*position: absolute; */
+        width: auto;
+        padding-top: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .nextTabText {
+        margin: 10px 0 0 50px;
+    }
+
+    .previousTabText {
+        margin: 10px 50px 0 0;
+    }
+
+
+
+    #tabResumeTxt1,
+    #tabResumeTxt2,
+    #tabResumeTxt3 {
+        background-color: black;
+        color: aliceblue;
+        padding: 30px;
+        position: absolute;
+        width: 450px;
+        height: 250px;
+        margin: 0 0 0 -175px;
+        opacity: 0.8;
+        overflow: scroll;
+        z-index: 7;
+    }
+
+    #tabResumeTxt1::-webkit-scrollbar,
+    #tabResumeTxt2::-webkit-scrollbar,
+    #tabResumeTxt3::-webkit-scrollbar {
+        display: none;
+    }
+
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tiaan Bezuidenhout 3D/Web Developer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        body {
+            background-image: url("./media/bgImages/firewatch-night-widescreen-wallpaper-59155-60939-hd-wallpapers.jpg");
+        }
+
+        .bodyContainer {
+            width: 100%;
+            height: 100%;
+        }
+
+        .res1 {
+            background-image: url("./media/me.jpg");
+        }
+
+        .res2 {
+            background-image: url("./media/my.jpg");
+        }
+
+        .res3 {
+            background-image: url("./media/myself.png");
+        }
+
+        .res1,
+        .res2,
+        .res3 {
+            display: table-row;
+            padding: 50px;
+            margin: 50px;
+            width: 300px;
+            height: 900px;
+            overflow: hidden;
+            border: solid 0px;
+            margin-left: 11%;
+        }
+
+        .res1:hover,
+        .res2:hover,
+        .res3:hover {
+            cursor: pointer;
+        }
+
+        /*--------------COMMING SOON-----------------*/
+        .res1,
+        .res3 {
+            opacity: 0.9;
+        }
+
+        h1,
+        h2 {
+            color: white;
+        }
+
+        h2 span {
+            color: rgb(255, 0, 0);
+        }
+
+        h3 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h4 {
+            color: blueviolet;
+        }
+
+        p {
+            color: white;
+            line-height: 20px;
+        }
+
+        .textDiv {
+            background-color: rgb(41, 41, 41);
+            padding: 10px;
+            height: 200px;
+            overflow: hidden;
+            margin-top: 600px;
+            transition: all 1s ease-out;
+        }
+
+        .textDiv:hover {
+            background-color: black;
+            height: 700px;
+            margin-top: 600px;
+            transform: translateY(-550px);
+            transition: all 1s ease-out;
+            overflow: scroll;
+        }
+
+        .textDiv::-webkit-scrollbar {
+            display: none;
+        }
+
+        .extraImg {
+            width: 100%;
+            height: 20%;
+        }
+
+        .green {
+            color: rgb(42, 141, 55);
+        }
+
+        .blue {
+            color: rgb(53, 156, 151);
+        }
+
+        .red {
+            color: rgb(155, 41, 41);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bodyContainer">
+
+        <button class="res1">
+
+            <div class="textDiv" style="background-color: rgb(31, 31, 31);">
+                <h1>COMMING SOON!</h1>
+                <h1>Resume:1</h1>
+                <h2>Tiaan <span class="green">Bezuidenhout</span></h2>
+                <h2>Bar-Tender & Mixologist</h2>
+                <h3 class="green">Take a look at my online portfolio-website:</h3>
+
+                <br>
+                <p>This website was build using Visual-Studio-Code in collaboration with Github. Using my own developer
+                    intuition and skillset, I can create all sorts of 'web-works'. Since the soul purpose of this site
+                    is to showcase my web experience and projects, I fiured that using my own code to sow off my
+                    developer skills would only add to my showcase!</p>
+
+                <h4 class="green">Click here and get started!</h4>
+                <br>
+                <img alt="#" src="./media/zedazeni-loader-2.gif" class="extraImg">
+            </div>
+
+        </button>
+
+        <button onclick="window.location.href='https://tntb2.github.io/TNTB2.github.io-/';" class="res2">
+            <!-- href="./index.html" -->
+
+            <div class="textDiv">
+                <h1>Resume:2</h1>
+                <h2>Tiaan <span class="blue">Bezuidenhout</span></h2>
+                <h2>3D-Designer</h2>
+                <h3 class="blue">Take a look at my online portfolio-website:</h3>
+
+                <br>
+                <p>This website was build using Visual-Studio-Code in collaboration with Github. Using my own developer
+                    intuition and skillset, I can create all sorts of 'web-works'. Since the soul purpose of this site
+                    is to showcase my web experience and projects, I fiured that using my own code to sow off my
+                    developer skills would only add to my showcase!</p>
+
+                <h4 class="blue">Click here and get started!</h4>
+                <br>
+                <img alt="#" src="./media/hy.gif" class="extraImg" style="width:auto;">
+            </div>
+
+        </button>
+
+        <button class="res3">
+
+            <div class="textDiv">
+
+                <!--<div class="palarax1">
+
+                </div>-->
+
+                <h1>COMMING SOON!</h1>
+                <h1>Resume:3</h1>
+                <h2>Tiaan <span class="red">Bezuidenhout</span></h2>
+                <h2>Web & Graphics-Developer</h2>
+                <h3 class="red">Take a look at my online portfolio-website:</h3>
+
+                <br>
+                <p>This website was build using Visual-Studio-Code in collaboration with Github. Using my own developer
+                    intuition and skillset, I can create all sorts of 'web-works'. Since the soul purpose of this site
+                    is to showcase my web experience and projects, I fiured that using my own code to sow off my
+                    developer skills would only add to my showcase!</p>
+
+                <h4 class="red">Click here and get started!</h4>
+                <br>
+                <img alt="#" src="./media/ImmenseCheerfulKinkajou-size_restricted.gif" class="extraImg">
+            </div>
+
+        </button>
+
+    </div>
+
+    <script src="./js/navigation.js"></script>
+    <script src="./js/project-desc.js"></script>
+    <script src="./js/sliders-js.js"></script>
+    <script src="./js/social-media-share-btns.js"></script>
+
+</body>
+
+</html>
