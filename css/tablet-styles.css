@@ -33,7 +33,7 @@
         max-width: 400px;
         transition: all 1s linear;
         background-color: rgb(4, 105, 109);
-        background-image: url("./media/my.jpg"); /*---------------------This line of code needs a look at---------------------*/
+        background-image: url("./media/myRender3.png"); /*---------------------This line of code needs a look at---------------------*/
     }
 
     .hide,
