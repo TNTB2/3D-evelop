@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Page Brochures</title>
+    <link rel="stylesheet" href="../styles/brochure.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/contentBoxes.css" />
+    <link rel="stylesheet" href="../styles/mobile.css" />
+    <link rel="stylesheet" href="../styles/tablet.css" />
+    <link rel="stylesheet" href="../styles/colors.css" />
+</head>
+
+<body>
+
+    <div class="brochure-container">
+        <!-- Web Development -->
+        <section class="brochure-section" id="web-development">
+
+            <div class="brochure-nav coldDarkGrey" id="web-nav">
+                <ul>
+                    <li onclick="viewIndex(this)" class="mobile-nav-item" data-target="webContentContainer">
+                        <a id="web-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewInfo(this)" class="mobile-nav-item" data-target="web_info">
+                        <a id="web-info-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewGallery(this)" class="mobile-nav-item" data-target="web_gallery">
+                        <a id="web-gallery-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contactBtn1" class="contactBtn" href="../pages/contact">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                    <li class="back-btn-nav">
+                        <button id="back_btn1" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-08.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-08.png"
+                                data-hovered="../media/Icons/mouseover icons-08.png"
+                                data-selected="../media/Icons/selected icons-08.png">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover red">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-05.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-05.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-05.png"
+                            data-selected="../media/Icons/Mains/selected icons-05.png"></img>
+                        <br>
+                        Web Dev
+                    </h2>
+                    <p>Welcome to our Web Development brochure<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        Showcasing our range of responsive websites<span
+                            class="numerics">,</span>
+                        interactive interfaces
+                        and dynamic online experiences<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        This section is all about creating front<span class="numerics">-</span>end
+                        environments to effectively reach out to your target<span class="numerics">-</span>audiences<span
+                            class="numerics">.</span>
+                        <br>
+                        <br>
+                        Focused on easy<span class="numerics">-</span>use<span class="numerics">,</span> modern web<span class="numerics">-</span>technologies<span
+                            class="numerics">,</span>
+                        and user<span class="numerics">-</span>centric designs to blend your visualizations into
+                        practicality<span class="numerics">.</span>
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+                        <img src="../media/logos/3Ddevelop_logo-black.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="webContentContainer" class="content-section">
+                <div id="web_index" class="web-content coldDarkGrey">
+                    <h1>Web Development</h1>
+                    <p>Custom web based frameworks<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div id="web_info" class="web-content coldDarkGrey">
+                    <h1>Web Services</h1>
+                    <p>User<span class="numerics">-</span>centric experiences</p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web_gallery" class="web-content coldDarkGrey">
+                    <h1>Gallery</h1>
+                    <p>Modern web design technologies</p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Sculpting -->
+        <section class="brochure-section" id="sculpting">
+
+            <div class="brochure-nav daySkyBlue" id="sculpting-nav">
+                <ul>
+                    <li onclick="viewSculptingIndex(this)" class="mobile-nav-item"
+                        data-target="sculptingContentContainer">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewSculptingInfo(this)" class="mobile-nav-item" data-target="sculpting_info">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewSculptingGallery(this)" class="mobile-nav-item" data-target="sculpting_gallery">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contactBtn2" class="contactBtn" href="../pages/contact">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                    <li class="back-btn-nav">
+                        <button id="back_btn2" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-08.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-08.png"
+                                data-hovered="../media/Icons/mouseover icons-08.png"
+                                data-selected="../media/Icons/selected icons-08.png">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover oceanBlue">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-06.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-06.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-06.png"
+                            data-selected="../media/Icons/Mains/selected icons-06.png"></img>
+                        <br>
+                        <span class="numerics">3</span>D Sculpting
+                    </h2>
+                    <p>Step into the world of <span class="numerics">3</span>D Design<span class="numerics">,</span>
+                        where creativity meets precision<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        This brochure features a range of digital sculptures<span class="numerics">,</span>
+                        product visualizations<span class="numerics">,</span>
+                        and conceptual designs<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        Proficiency in <span class="numerics">3</span>D modeling<span class="numerics">,</span>
+                        texturing<span class="numerics">,</span>
+                        and rendering for both artistic flare and product accuracy<span class="numerics">.</span>
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+                        <img src="../media/logos/3Ddevelop_logo-black.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="sculptingContentContainer" class="content-section">
+                <div id="sculpting_index" class="sculpting-content daySkyBlue">
+                    <h1><span class="numerics">3</span>D Design</h1>
+                    <p>Attention to detail<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sculpting_info" class="sculpting-content daySkyBlue">
+                    <h1>Services</h1>
+                    <p>High<span class="numerics">-</span>precision<span class="numerics">,</span> Top<span
+                            class="numerics">-</span>quality<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sculpting_gallery" class="sculpting-content daySkyBlue">
+                    <h1>Renders</h1>
+                    <p>Bring your designs to life<span class="numerics">!</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graphics Design -->
+        <section class="brochure-section" id="graphics-design">
+
+            <div class="brochure-nav lightMint" id="design-nav">
+                <ul>
+                    <li onclick="viewDesignIndex(this)" class="mobile-nav-item" data-target="designContentContainer">
+                        <a id="design-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewDesignInfo(this)" class="mobile-nav-item" data-target="design_info">
+                        <a id="design-info-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewDesignGallery(this)" class="mobile-nav-item" data-target="design_gallery">
+                        <a id="design-gallery-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contactBtn3" class="contactBtn" href="../pages/contact">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                    <li class="back-btn-nav">
+                        <button id="back_btn3" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-08.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-08.png"
+                                data-hovered="../media/Icons/mouseover icons-08.png"
+                                data-selected="../media/Icons/selected icons-08.png">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover mint">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-07.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-07.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-07.png"
+                            data-selected="../media/Icons/Mains/selected icons-07.png"></img>
+                        <br>
+                        UI Design
+                    </h2>
+                    <p>Explore the UI Design brochure to see how functionality and aesthetics blend in seamlessly<span
+                            class="numerics">.</span>
+                        <br>
+                        <br>
+                        From Product<span class="numerics">-</span>Configurators to interactive User<span
+                            class="numerics">-</span>experiences<span class="numerics">(UX).</span>
+                        <br>
+                        <br>
+                        This section showcases
+                        visually engaging<span class="numerics">,</span> User<span class="numerics">-</span>Interfaces
+                        tailored for Virtual <span class="numerics">&</span> Augmented Reality<span class="numerics">(AR/VR)</span> <br> Platforms<span
+                            class="numerics">.</span>
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+                        <img src="../media/logos/3Ddevelop_logo-black.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="designContentContainer" class="content-section">
+                <div id="design_index" class="design-content lightMint">
+                    <h1>Extended<span class="numerics">-</span>Reality<span class="numerics">(XR)</span></h1>
+                    <p>Where Augmented<span class="numerics">-</span>Reality<span class="numerics">(AR),</span> meets
+                        Virtual<span class="numerics">-</span>Reality<span class="numerics">(VR)!</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="design_info" class="design-content lightMint">
+                    <h1>Services <span class="numerics">&</span> Software</h1>
+                    <p>Tailored User<span class="numerics">-</span>Interfaces</p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="design_gallery" class="design-content lightMint">
+                    <h1>Product<span class="numerics">-</span>Showcases</h1>
+                    <p>Here<span class="numerics">'</span>s how you stand out from your competition<span
+                            class="numerics">!</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back Button Outside of Brochures -->
+    <button class="back-btn coldDarkGrey" type="button" title="Back to All Brochures">
+        <img src="../media/Icons/unselected icons-08.png" width="30px"
+            data-unselected="../media/Icons/unselected icons-08.png"
+            data-hovered="../media/Icons/mouseover icons-08.png" data-selected="../media/Icons/selected icons-08.png" />
+    </button>
+
+
+
+    <script src="../script/brochureSelector.js"></script>
+    <script src="../script/navigation.js"></script>
+    <script src="../script/mobileNav.js"></script>
+    <script src="../script/iconState.js"></script>
+    <script src="../script/back_BTN.js"></script>
+</body>
+
+</html>

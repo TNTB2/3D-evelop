@@ -1,0 +1,196 @@
+/* ========== Shared Base Styles ========== */
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 150px 0;
+  color: #fff;
+  background: #111;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+/* Heading */
+.slider-heading-container {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.slider-wrapper:hover .slider-heading-container {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.slider-heading {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+/* Slides */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Navigation Arrows */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.slider-wrapper:hover .nav {
+  opacity: 1;
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
+
+/* Indicators */
+.indicators {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.indicators span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: white;
+  border-radius: 50%;
+  transition: background 0.3s;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.indicators span.active {
+  background: white;
+  opacity: 0.7;
+}
+
+/* Divider Heading */
+.dividerHeading {
+  text-align: center;
+  margin-bottom: -100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-wrapper {
+    height: 250px;
+  }
+
+  .slider-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* ========== Custom UI: Slider 1 (Yellow Theme) ========== */
+
+#sliderWrapper1 .slider-heading {
+  color: #fce600;
+}
+
+#sliderWrapper1 .nav {
+  color: #fce600;
+}
+
+#sliderWrapper1 .indicators span {
+  background: #ddd;
+}
+
+#sliderWrapper1 .indicators span.active {
+  background: #fce600;
+}
+
+/* Optional: Slider 1 background (optional tone) */
+#sliderWrapper1 {
+  background: #1a1a00;
+}
+
+/* ========== Custom UI: Slider 2 (Green Theme) ========== */
+
+#sliderWrapper2 .slider-heading {
+  color: #00e676;
+}
+
+#sliderWrapper2 .nav {
+  color: #00e676;
+}
+
+#sliderWrapper2 .indicators span {
+  background: #ccc;
+}
+
+#sliderWrapper2 .indicators span.active {
+  background: #00e676;
+}
+
+/* Optional: Slider 2 background (optional tone) */
+#sliderWrapper2 {
+  background: #001a0f;
+}
+
+
+/* ========== Custom UI: Slider 3 (red Theme) ========== */
+
+#sliderWrapper3 .slider-heading {
+  color: #ff0000;
+}
+
+#sliderWrapper3 .nav {
+  color: #e60000;
+}
+
+#sliderWrapper3 .indicators span {
+  background: #ccc;
+}
+
+#sliderWrapper3 .indicators span.active {
+  background: #e60000;
+}
+
+/* Optional: Slider 2 background (optional tone) */
+#sliderWrapper3 {
+  background: #001a0f;
+}

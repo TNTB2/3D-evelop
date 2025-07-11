@@ -1,0 +1,123 @@
+/* Mobile Styles for Back Button and Content */
+@media (max-width: 768px) {
+    /* Initially show the brochure-cover on mobile */
+    .brochure-cover {
+        width: 100%;
+        display: block;
+        min-width: 300px;
+        padding-left: 80px; /* space for nav */
+    }
+
+    /* Hide it when navigation triggers it */
+    .brochure-cover.hidden {
+        display: none !important;
+    }
+
+    /* Content sections hidden initially on mobile */
+    .content-section {
+        display: none;
+    }
+
+    .brochure-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 130px;
+    }
+
+    .mobile-nav-item {
+        cursor: pointer;
+    }
+
+    .brochure-section {
+        margin-top: -100px;
+        box-shadow: 20px 20px 20px 30px rgba(0, 0, 0, 0.1);
+        border-right: 5px solid #a0d7db;
+        border-bottom: 5px solid #a0d7db;
+        box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .brochure-section:hover {
+        box-shadow: 20px 20px 50px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    #web-development {
+        z-index: 1;
+        width: 91%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #sculpting {
+        z-index: 2;
+        width: 95%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #graphics-design {
+        z-index: 3;
+        width: 99%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #web-development:hover,
+    #sculpting:hover,
+    #graphics-design:hover {
+        width: 100%;
+        z-index: 4;
+    }
+
+    .web-content, .sculpting-content, .design-content {
+        height: 100%;
+        margin-top: 0%;
+        border-left: 5px solid #a0d7db;
+    }
+
+    .back-btn {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /* Navigation styling */
+    .brochure-nav {
+        width: 50px;
+        flex-direction: row;
+        height: 270px;
+        display: block;
+    }
+
+    .brochure-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .brochure-nav ul li {
+        padding: 10px 0;
+        width: 50px;
+        border-radius: 15px 0 0 15px;
+        text-align: center;
+    }
+
+    .brochure-nav ul li a {
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .brochure-nav ul li a:hover {
+        color: #007BFF;
+    }
+
+    /* Adjusted content containers */
+    #webContentContainer,
+    #sculptingContentContainer,
+    #designContentContainer {
+        display: block;
+    }
+
+    .brochure-content {
+        margin: -50px 0 0 -50px;
+    }
+}

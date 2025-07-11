@@ -1,0 +1,222 @@
+/*-------------------------Website Fonts-------------------------*/
+@font-face {
+    font-family: yonder-breaks-demo;
+    /*Good for headings*/
+    src: url('../media/Fonts/yonder-breaks-demo/YonderBreaksDemoRegular.ttf');
+}
+
+@font-face {
+    font-family: black-cyber-demo;
+    /*Good for Headings symetric html5*/
+    src: url('../media/Fonts/black-cyber-demo/BlackCyberDemoRegular.ttf');
+}
+
+@font-face {
+    font-family: futurest-cosmo;
+    /*Good for numerics*/
+    src: url('../media/Fonts/futurest-cosmo/Futurest\ Cosmo.ttf');
+}
+
+@font-face {
+    font-family: groovy-fast;
+    /*Good for numerics and text*/
+    src: url('../media/Fonts/groovy-fast/Groovy\ Fast.ttf');
+}
+
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e2e8f1;
+}
+
+
+
+body {
+    /* ========================================try it======================
+    this created a clipping mask for the background image 
+    background-color: #ffffff;
+    background-image: url('../media/logos/3Ddevelop_logo-black.png');
+    */
+    font-family: yonder-breaks-demo;
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+body.web-bg {
+    background-color: #ffffff;
+    background-image: url('../media/logos/3Ddevelop_logo-black.png');
+    background-repeat: repeat;
+    background-size: 20%;
+}
+
+body.sculpting-bg {
+    background-image: url('../media/MoodBoard/12bb9e6ae6efdaf863a70168feec64b1.jpg');
+}
+
+body.design-bg {
+    background-image: url('../media/MoodBoard/6198b898d5b66919da9cc38e25fd93be.jpg');
+}
+
+
+
+
+h1,
+h2,
+p {
+    color: #e2e8f1;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.brochure-content h2 {
+    font-size: 1.7rem;
+}
+
+.brochure-content p {
+    font-size: 1rem;
+}
+
+.numerics {
+    font-family: futurest-cosmo;
+    font-size: 1.3em;
+    color: inherit;
+}
+
+
+/*-------------------------Website Colors-------------------------*/
+
+.websites {
+    font-family: black-cyber-demo;
+}
+
+.websites h2 {
+    font-size: 1.9em;
+}
+
+.websites p {
+    letter-spacing: 1px;
+}
+
+.websites h2 img {
+    padding-bottom: 30px;
+}
+
+
+.red {
+    background-color: #c7080c;
+}
+
+.bloodRed {
+    background-color: #6c0102;
+}
+
+.darkRed {
+    background-color: #440101;
+}
+
+
+
+/*-------------------------3D Colors-------------------------*/
+
+.daySkyBlue {
+    background-color: #b9cdee;
+}
+
+.skyBlue {
+    background-color: #4a7cbb;
+}
+
+.iceBlue {
+    background-color: #4468a6;
+}
+
+.oceanBlue {
+    background-color: #28487b;
+}
+
+.oceanBlue p,
+.daySkyBlue p,
+.daySkyBlue h1 {
+    color: #4468a6;
+}
+
+
+/*-------------------------UI Colors-------------------------*/
+
+.lightMint {
+    background-color: #bff4f8;
+}
+
+.mint {
+    background-color: #83c7cc;
+}
+
+.darkMint {
+    background-color: #159894;
+}
+
+.mint p,
+.lightMint p,
+.lightMint h1 {
+    color: #159894;
+}
+
+
+/*-------------------------Back_BTN Colors-------------------------*/
+.coldDarkGrey {
+    background-color: #222b31;
+}
+
+.darkGrey {
+    background-color: #55666e;
+}
+
+.lightGrey {
+    background-color: #cdd8eb;
+}
+
+
+/* Style for Back Button */
+.back-btn {
+    background-color: #222b31;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Back button */
+.back-btn:hover {
+    background-color: #55666e;
+}
+
+/*-------------------------Contact form Colors-------------------------*/
+
+form h2,
+input,
+textarea {
+    color: #222b31;
+}
+
+form button,
+.bin {
+    color: #cdd8eb;
+}
+
+form button:hover,
+.bin:hover,
+.fa-trash-o:hover {
+    color: #222b31;
+    background-color: #cdd8eb;
+}
