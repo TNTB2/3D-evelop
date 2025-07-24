@@ -1,5 +1,5 @@
 // Load the contact form HTML into each placeholder
-fetch('../pages/contact-form.html')
+fetch('./pages/contact-form.html')
     .then(res => res.text())
     .then(html => {
         const placeholders = document.querySelectorAll('.contact-form-placeholder');
