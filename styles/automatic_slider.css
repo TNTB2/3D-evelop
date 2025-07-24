@@ -194,3 +194,27 @@
 #sliderWrapper3 {
   background: #001a0f;
 }
+
+
+/* ========== Custom UI: Slider 4-5 (renders Theme) ========== */
+
+#sliderWrapper4 .slider-heading, #sliderWrapper5 .slider-heading {
+  color: #cdd8eb;
+}
+
+#sliderWrapper4 .nav, #sliderWrapper5 .nav {
+  color: #cdd8eb;
+}
+
+#sliderWrapper4 .indicators span, #sliderWrapper5 .indicators span {
+  background: #ccc;
+}
+
+#sliderWrapper4 .indicators span.active, #sliderWrapper5 .indicators span.active {
+  background: #cdd8eb;
+}
+
+/* Optional: Slider 2 background (optional tone) */
+#sliderWrapper4, #sliderWrapper5 {
+  background: none;
+}

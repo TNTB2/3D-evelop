@@ -208,43 +208,50 @@
                     <br>
                     <div class="scroll-box">
 
-
                         <div class="contentBox">
-                            <div class="websiteBlock" data-url="https://befoundstudio.co.za"
-                                style="--bg-image: url('./media/Backgrounds/selfie-background-4000-x-6000-eealgswr2y8zj0e6.jpg')">
-                                <p>Company name<span class="numerics">:</span> Befound<span
+
+                            <div class="websiteBlock" data-url="https://befoundstudio.co.za">
+                                <p>
+                                    Company name<span class="numerics">:</span> Befound<span
                                         class="numerics">-</span>Studios<span class="numerics">.</span>
                                     Their site address is<span class="numerics">: https://befoundstudio.co.za</span>
                                 </p>
-                                <div class="backgroundImage"></div>
+                                <div class="iframeContainer">
+                                    <iframe src="https://befoundstudio.co.za" loading="lazy"></iframe>
+                                </div>
                                 <a class="siteLink" href="https://befoundstudio.co.za" target="_blank">Visit Befound
                                     Studios</a>
                             </div>
 
                             <br><br>
 
-                            <div class="websiteBlock" data-url="https://zhushitup.com"
-                                style="--bg-image: url('./media/Backgrounds/c61cee4f0fe6b76f5d9a8b62ad1ca41d.jpg')">
-                                <p>Company name<span class="numerics">:</span> Zhush It Up<span
+                            <div class="websiteBlock" data-url="https://zhushitup.com">
+                                <p>
+                                    Company name<span class="numerics">:</span> Zhush It Up<span
                                         class="numerics">-</span>Studios<span class="numerics">.</span>
                                     Their site address is<span class="numerics">: https://zhushitup.com</span>
                                 </p>
-                                <div class="backgroundImage"></div>
+                                <div class="iframeContainer">
+                                    <iframe src="https://zhushitup.com" loading="lazy"></iframe>
+                                </div>
                                 <a class="siteLink" href="https://zhushitup.com" target="_blank">Visit Zhush It Up</a>
                             </div>
 
                             <br><br>
 
-                            <div class="websiteBlock" data-url="https://exampledesigns.com"
-                                style="--bg-image: url('./media/Backgrounds/8b6bb4094291974b489e05f83b80bf20.jpg')">
-                                <p>Company name<span class="numerics">:</span> Example<span
+                            <div class="websiteBlock" data-url="https://exampledesigns.com">
+                                <p>
+                                    Company name<span class="numerics">:</span> Example<span
                                         class="numerics">-</span>Designs<span class="numerics">.</span>
                                     Their site address is<span class="numerics">: https://exampledesigns.com</span>
                                 </p>
-                                <div class="backgroundImage"></div>
+                                <div class="iframeContainer">
+                                    <iframe src="https://exampledesigns.com" loading="lazy"></iframe>
+                                </div>
                                 <a class="siteLink" href="https://exampledesigns.com" target="_blank">Visit Example
                                     Designs</a>
                             </div>
+
                         </div>
 
 
@@ -425,42 +432,104 @@
                     <p>Bring your designs to life<span class="numerics">!</span></p>
                     <br>
                     <div class="scroll-box">
+
                         <div class="contentBox">
                             <div class="spline-gallery">
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+
+                                <!-- First row: two spline viewers side-by-side -->
+                                <div class="spline-row two-cols">
+                                    <div class="spline-cell">
+                                        <spline-viewer
+                                            url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+                                    </div>
+                                    <div class="spline-cell">
+                                        <spline-viewer
+                                            url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+                                    </div>
                                 </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+
+                                <!-- Second row: full width slider -->
+                                <div class="spline-row one-col">
+                                    <div class="spline-cell">
+                                        <section class="image-slider render-slider">
+                                            <div class="slider-wrapper" id="sliderWrapper4">
+                                                <div class="slider-heading-container">
+                                                    <div class="slider-heading">Slide 1 Heading</div>
+                                                </div>
+
+                                                <div class="slide active"
+                                                    style="background-image: url('./media/dark-grey-concrete-texture_1375194-29599.avif');"
+                                                    data-heading="Slide 1 Heading"></div>
+                                                <div class="slide" style="background-image: url('./media/hy.gif');"
+                                                    data-heading="Slide 2 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./HoneyCoumb_Design.jpg');"
+                                                    data-heading="Slide 3 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./Random_Blocks_Design.jpeg');"
+                                                    data-heading="Slide 4 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./Random_Blocks_Design2.png');"
+                                                    data-heading="Slide 5 Heading"></div>
+
+                                                <button class="nav prev">&#10094;</button>
+                                                <button class="nav next">&#10095;</button>
+
+                                                <div class="indicators"></div>
+                                            </div>
+                                        </section>
+                                    </div>
                                 </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+
+                                <!-- Third row: two spline viewers side-by-side -->
+                                <div class="spline-row two-cols">
+                                    <div class="spline-cell">
+                                        <spline-viewer
+                                            url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+                                    </div>
+                                    <div class="spline-cell">
+                                        <spline-viewer
+                                            url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+                                    </div>
                                 </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
+
+                                <!-- Fourth row: full width slider -->
+                                <div class="spline-row one-col">
+                                    <div class="spline-cell">
+                                        <section class="image-slider render-slider">
+                                            <div class="slider-wrapper" id="sliderWrapper5">
+                                                <div class="slider-heading-container">
+                                                    <div class="slider-heading">Slide 1 Heading</div>
+                                                </div>
+
+                                                <div class="slide active"
+                                                    style="background-image: url('./media/dark-grey-concrete-texture_1375194-29599.avif');"
+                                                    data-heading="Slide 1 Heading"></div>
+                                                <div class="slide" style="background-image: url('./media/hy.gif');"
+                                                    data-heading="Slide 2 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./HoneyCoumb_Design.jpg');"
+                                                    data-heading="Slide 3 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./Random_Blocks_Design.jpeg');"
+                                                    data-heading="Slide 4 Heading"></div>
+                                                <div class="slide"
+                                                    style="background-image: url('./Random_Blocks_Design2.png');"
+                                                    data-heading="Slide 5 Heading"></div>
+
+                                                <button class="nav prev">&#10094;</button>
+                                                <button class="nav next">&#10095;</button>
+
+                                                <div class="indicators"></div>
+                                            </div>
+                                        </section>
+                                    </div>
                                 </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
-                                </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
-                                </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
-                                </div>
-                                <div class="spline-cell">
-                                    <spline-viewer
-                                        url="https://prod.spline.design/iiSruJMUWW-dq6UB/scene.splinecode"></spline-viewer>
-                                </div>
+
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>

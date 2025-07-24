@@ -1,13 +1,13 @@
 document.querySelectorAll('.websiteBlock').forEach(block => {
-  const bg = block.querySelector('.backgroundImage');
-
-  block.addEventListener('mouseleave', () => {
-    bg.style.transition = 'transform 1.5s ease-in-out';
-    bg.style.transform = 'translateY(0%)';
-  });
+  const iframeContainer = block.querySelector('.iframeContainer');
 
   block.addEventListener('mouseenter', () => {
-    bg.style.transition = 'transform 1.5s ease-in-out';
-    bg.style.transform = 'translateY(-50%)';
+    iframeContainer.style.transition = 'transform 3s ease-in-out';
+    iframeContainer.style.transform = 'translateY(-50%)';
+  });
+
+  block.addEventListener('mouseleave', () => {
+    iframeContainer.style.transition = 'transform 3s ease-in-out';
+    iframeContainer.style.transform = 'translateY(0%)';
   });
 });
