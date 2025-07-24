@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Page Brochures</title>
+
+    <link rel="stylesheet" href="../styles/parallax_gradient.css" />
+    <link rel="stylesheet" href="../styles/brochure.css" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <link rel="stylesheet" href="../styles/contentBoxes.css" />
+    <link rel="stylesheet" href="../styles/automatic_slider.css" />
+    <link rel="stylesheet" href="../styles/websiteBlocks.css">
+    <link rel="stylesheet" href="../styles/dual_list_section.css" />
+    <link rel="stylesheet" href="../styles/contact-section.css" />
+    <link rel="stylesheet" href="../styles/mobile.css" />
+    <link rel="stylesheet" href="../styles/tablet.css" />
+    <link rel="stylesheet" href="../styles/colors.css" />
+</head>
+
+<body>
+
+    <div class="gradient-layer"></div>
+
+    <div class="brochure-container">
+        <!-- Web Development -->
+        <section class="brochure-section" id="web-development">
+
+            <div class="brochure-nav coldDarkGrey" id="web-nav">
+                <ul>
+                    <li class="back-btn-nav">
+                        <button id="back_btn1" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </button>
+                    </li>
+                    <li onclick="viewInfo(this)" class="mobile-nav-item" data-target="web_info">
+                        <a id="web-info-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewGallery(this)" class="mobile-nav-item" data-target="web_gallery">
+                        <a id="web-gallery-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewIndex(this)" class="mobile-nav-item" data-target="webContentContainer">
+                        <a id="web-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover red">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-05.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-05.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-05.png"
+                            data-selected="../media/Icons/Mains/selected icons-05.png"></img>
+                        <br>
+                        Web Dev
+                    </h2>
+                    <p>Welcome to our Web Development brochure<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        Showcasing our range of responsive websites<span class="numerics">,</span>
+                        interactive interfaces
+                        and dynamic online experiences<span class="numerics">.</span>
+                        <br>
+                        <br>
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+
+                        <img src="../media/logos/3Develop-Logo-Red_NightModeBlue-White.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="webContentContainer" class="content-section">
+                <div id="web_index" class="web-content coldDarkGrey">
+                    <h1>Web Development</h1>
+                    <p>Custom web based frameworks<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+                            <!--
+                            <p>This section is all about creating front<span class="numerics">-</span>end
+                                environments to effectively reach out to your target<span
+                                    class="numerics">-</span>audiences<span class="numerics">.</span>
+                                <br>
+                                <br>
+                                Focused on easy<span class="numerics">-</span>use<span class="numerics">,</span> modern
+                                web<span class="numerics">-</span>technologies<span class="numerics">,</span>
+                                and user<span class="numerics">-</span>centric designs to blend your visualizations into
+                                practicality<span class="numerics">.</span>
+                            </p>
+                            -->
+                            <div class="floatLeft">
+                                <h3>Contact Number</h3><br>
+                                <p>067 348 6378</p><br>
+                            </div>
+                            <div class="floatRight">
+                                <h3>Email Address</h3><br>
+                                <p>Tiaan@befoundstudio.co.za</p><br>
+                            </div>
+
+                            <!--=================CONTACT FORM=================-->
+                            <div class="contact-form-placeholder"></div>
+
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div id="web_info" class="web-content coldDarkGrey">
+                    <h1>Web Services</h1>
+                    <p>User<span class="numerics">-</span>centric experiences</p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+
+                            <h2 class="dividerHeading dividerHeading2 scroll-fade">Scroll through our list of services
+                            </h2>
+
+                            <section class="dual_list_section">
+                                <div class="list_column" id="list_column_1">
+
+                                    <h2 class="center_Heading serviceHeadings">Services</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>Site Design <span class="numerics">&</span> Layouts</li>
+                                        <li>Website Development</li>
+                                        <li>Responsive <span class="numerics">&</span> Mobile<span
+                                                class="numerics">-</span>First Design</li>
+                                        <li>SEO <span class="numerics">&</span> Meta Optimization</li>
+                                        <li>Graphics Design</li>
+                                        <li>Hosting Services</li>
+                                        <li>Domain <span class="numerics">&</span> DNS<span
+                                                class="numerics">-</span>Configuration</li>
+                                        <li>Publishing <span class="numerics">&</span> Deployment</li>
+                                        <li>E<span class="numerics">-</span>commerce Integration</li>
+                                        <li>Payment Gateway Integration</li>
+                                        <li>Content Management Systems (CMS)</li>
+                                        <li>WordPress <span class="numerics">&</span> Shopify Customization</li>
+                                        <li>Web Animation <span class="numerics">&</span> Interaction Design</li>
+                                        <li>API Integration <span class="numerics">&</span> Webhooks</li>
+                                        <li>Speed <span class="numerics">&</span> Performance Optimization</li>
+                                        <li>UI/UX Design for Web Applications</li>
+                                        <li>Landing Pages <span class="numerics">&</span> Marketing Funnels</li>
+                                        <li>Forms <span class="numerics">&</span> Contact Systems</li>
+                                        <li>Email Campaign Integration</li>
+                                        <li>Accessibility <span class="numerics">&</span> WCAG Compliance</li>
+                                        <li>Cross<span class="numerics">-</span>Browser Compatibility Testing</li>
+                                        <li>Security Hardening <span class="numerics">&</span> SSL Setup</li>
+                                        <li>Custom JavaScript Features</li>
+                                        <li>Analytics <span class="numerics">&</span> User Tracking</li>
+                                        <li>Progressive Web App (PWA) Development</li>
+                                    </ul>
+                                </div>
+
+                                <div class="list_column" id="list_column_2">
+
+                                    <h2 class="center_Heading serviceHeadings">Locations</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>Johannesburg</li>
+                                        <li>Pretoria</li>
+                                        <li>Stellenbosch</li>
+                                        <li>Bloemfontein</li>
+                                        <li>Cape<span class="numerics">-</span>Town</li>
+                                        <li>Durban</li>
+                                        <li>Gqeberha</li>
+                                        <li>Boksburg</li>
+                                        <li>Roodepoort</li>
+                                        <li>Vereeniging</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="web_gallery" class="web-content coldDarkGrey">
+                    <h1>Gallery</h1>
+                    <p>Modern web design technologies</p>
+                    <br>
+                    <div class="scroll-box">
+
+
+                        <div class="contentBox">
+                            <div class="websiteBlock" data-url="https://befoundstudio.co.za"
+                                style="--bg-image: url('../media/Backgrounds/selfie-background-4000-x-6000-eealgswr2y8zj0e6.jpg')">
+                                <p>Company name<span class="numerics">:</span> Befound<span
+                                        class="numerics">-</span>Studios<span class="numerics">.</span>
+                                    Their site address is<span class="numerics">: https://befoundstudio.co.za</span>
+                                </p>
+                                <div class="backgroundImage"></div>
+                                <a class="siteLink" href="https://befoundstudio.co.za" target="_blank">Visit Befound
+                                    Studios</a>
+                            </div>
+
+                            <br><br>
+
+                            <div class="websiteBlock" data-url="https://zhushitup.com"
+                                style="--bg-image: url('../media/Backgrounds/c61cee4f0fe6b76f5d9a8b62ad1ca41d.jpg')">
+                                <p>Company name<span class="numerics">:</span> Zhush It Up<span
+                                        class="numerics">-</span>Studios<span class="numerics">.</span>
+                                    Their site address is<span class="numerics">: https://zhushitup.com</span>
+                                </p>
+                                <div class="backgroundImage"></div>
+                                <a class="siteLink" href="https://zhushitup.com" target="_blank">Visit Zhush It Up</a>
+                            </div>
+
+                            <br><br>
+
+                            <div class="websiteBlock" data-url="https://exampledesigns.com"
+                                style="--bg-image: url('../media/Backgrounds/8b6bb4094291974b489e05f83b80bf20.jpg')">
+                                <p>Company name<span class="numerics">:</span> Example<span
+                                        class="numerics">-</span>Designs<span class="numerics">.</span>
+                                    Their site address is<span class="numerics">: https://exampledesigns.com</span>
+                                </p>
+                                <div class="backgroundImage"></div>
+                                <a class="siteLink" href="https://exampledesigns.com" target="_blank">Visit Example
+                                    Designs</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Sculpting -->
+        <section class="brochure-section" id="sculpting">
+
+            <div class="brochure-nav daySkyBlue" id="sculpting-nav">
+                <ul>
+                    <li class="back-btn-nav">
+                        <button id="back_btn1" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </button>
+                    </li>
+                    <li onclick="viewSculptingInfo(this)" class="mobile-nav-item" data-target="sculpting_info">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewSculptingGallery(this)" class="mobile-nav-item" data-target="sculpting_gallery">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewSculptingIndex(this)" class="mobile-nav-item"
+                        data-target="sculptingContentContainer">
+                        <a id="sculpting-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover oceanBlue">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-06.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-06.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-06.png"
+                            data-selected="../media/Icons/Mains/selected icons-06.png"></img>
+                        <br>
+                        <span class="numerics">3</span>D Sculpting
+                    </h2>
+                    <p>Step into the world of <span class="numerics">3</span>D Design<span class="numerics">.</span>
+                        <br>
+                        <br>
+
+                        Creating precise <span class="numerics">3</span>D models<span class="numerics">,</span>
+                        texturing<span class="numerics">,</span>
+                        and rendering for both artistic flare and product accuracy<span class="numerics">.</span>
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+
+                        <img src="../media/logos/3Develop-Logo-Red_NightModeBlue-White.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="sculptingContentContainer" class="content-section">
+                <div id="sculpting_index" class="sculpting-content daySkyBlue">
+                    <h1><span class="numerics">3</span>D Design</h1>
+                    <p>Attention to detail<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+                            <!--
+                            <p>
+                                This brochure features a range of digital sculptures<span class="numerics">,</span>
+                                product visualizations<span class="numerics">,</span>
+                                and conceptual designs<span class="numerics">.</span>
+                                <br>
+                                <br>
+                            </p>
+                            -->
+
+                            <div class="floatLeft">
+                                <h3>Contact Number</h3><br>
+                                <p>067 348 6378</p><br>
+                            </div>
+                            <div class="floatRight">
+                                <h3>Email Address</h3><br>
+                                <p>Tiaan@befoundstudio.co.za</p><br>
+                            </div>
+
+                            <!--=================CONTACT FORM=================-->
+                            <div class="contact-form-placeholder"></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sculpting_info" class="sculpting-content daySkyBlue">
+                    <h1>Services</h1>
+                    <p>High<span class="numerics">-</span>precision<span class="numerics">,</span> Top<span
+                            class="numerics">-</span>quality<span class="numerics">.</span></p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+
+                            <h2 class="dividerHeading dividerHeading2 scroll-fade">Scroll through our list of services
+                            </h2>
+
+                            <section class="dual_list_section">
+                                <div class="list_column" id="list_column_1">
+
+                                    <h2 class="center_Heading serviceHeadings">Services</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>3D Modeling <span class="numerics">&</span> Sculpting</li>
+                                        <li>Texturing <span class="numerics">&</span> UV Mapping</li>
+                                        <li>High<span class="numerics">-</span>Poly to Low<span
+                                                class="numerics">-</span>Poly Optimization</li>
+                                        <li>3D Rendering <span class="numerics">&</span> Visualization</li>
+                                        <li>Product Visualization</li>
+                                        <li>Character Design <span class="numerics">&</span> Rigging</li>
+                                        <li>Environment Design</li>
+                                        <li>Architectural Visualization</li>
+                                        <li>Animation <span class="numerics">&</span> Motion Graphics</li>
+                                        <li>Virtual Reality (VR) Assets</li>
+                                        <li>Augmented Reality (AR) Models</li>
+                                        <li>Game Asset Creation</li>
+                                        <li>3D Printing Models <span class="numerics">&</span> Prototyping</li>
+                                        <li>Simulation <span class="numerics">&</span> VFX</li>
+                                        <li>Scene Lighting <span class="numerics">&</span> Composition</li>
+                                        <li>Interior <span class="numerics">&</span> Exterior Rendering</li>
+                                        <li>Material <span class="numerics">&</span> Shader Development</li>
+                                        <li>3D Logo <span class="numerics">&</span> Typography Design</li>
+                                        <li>Concept Art <span class="numerics">&</span> Visualization</li>
+                                        <li>Turntable <span class="numerics">&</span> Showcase Animations</li>
+                                    </ul>
+                                </div>
+
+                                <div class="list_column" id="list_column_2">
+
+                                    <h2 class="center_Heading serviceHeadings">Locations</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>Johannesburg</li>
+                                        <li>Pretoria</li>
+                                        <li>Stellenbosch</li>
+                                        <li>Bloemfontein</li>
+                                        <li>Cape<span class="numerics">-</span>Town</li>
+                                        <li>Durban</li>
+                                        <li>Gqeberha</li>
+                                        <li>Boksburg</li>
+                                        <li>Roodepoort</li>
+                                        <li>Vereeniging</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sculpting_gallery" class="sculpting-content daySkyBlue">
+                    <h1>Renders</h1>
+                    <p>Bring your designs to life<span class="numerics">!</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+                            <p>This is a scrollable box. Scroll up and down to view more content.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu feugiat sapien.
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.</p>
+                            <p>More content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graphics Design -->
+        <section class="brochure-section" id="graphics-design">
+
+            <div class="brochure-nav lightMint" id="design-nav">
+                <ul>
+                    <li class="back-btn-nav">
+                        <button id="back_btn1" class="back-btn-nav-button">
+                            <img src="../media/Icons/unselected icons-01.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-01.png"
+                                data-hovered="../media/Icons/mouseover icons-01.png"
+                                data-selected="../media/Icons/selected icons-01.png"></img>
+                        </button>
+                    </li>
+                    <li onclick="viewDesignInfo(this)" class="mobile-nav-item" data-target="design_info">
+                        <a id="design-info-btn" href="#">
+                            <img src="../media/Icons/unselected icons-02.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-02.png"
+                                data-hovered="../media/Icons/mouseover icons-02.png"
+                                data-selected="../media/Icons/selected icons-02.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewDesignGallery(this)" class="mobile-nav-item" data-target="design_gallery">
+                        <a id="design-gallery-btn" href="#">
+                            <img src="../media/Icons/unselected icons-03.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-03.png"
+                                data-hovered="../media/Icons/mouseover icons-03.png"
+                                data-selected="../media/Icons/selected icons-03.png"></img>
+                        </a>
+                    </li>
+                    <li onclick="viewDesignIndex(this)" class="mobile-nav-item" data-target="designContentContainer">
+                        <a id="design-home-btn" href="#">
+                            <img src="../media/Icons/unselected icons-04.png" width="30px"
+                                data-unselected="../media/Icons/unselected icons-04.png"
+                                data-hovered="../media/Icons/mouseover icons-04.png"
+                                data-selected="../media/Icons/selected icons-04.png"></img>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brochure-cover mint">
+                <div class="brochure-content">
+                    <h2>
+                        <img src="../media/Icons/Mains/unselected icons-07.png" width="100px"
+                            data-unselected="../media/Icons/Mains/unselected icons-07.png"
+                            data-hovered="../media/Icons/Mains/mouseover icons-07.png"
+                            data-selected="../media/Icons/Mains/selected icons-07.png"></img>
+                        <br>
+                        UI Design
+                    </h2>
+
+                    <p>Explore the UI Design brochure to see how functionality and aesthetics can blend in
+                        seamlessly<span class="numerics">.</span>
+                        <br>
+                        <br>
+                        From Product<span class="numerics">-</span>Configurators to interactive User<span
+                            class="numerics">-</span>experiences<span class="numerics">(UX).</span>
+
+                    </p>
+
+                    <!-- Logo at the bottom -->
+                    <div class="brochure-logo-container">
+
+                        <img src="../media/logos/3Develop-Logo-Red_NightModeBlue-White.png" alt="3Develop Logo">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="designContentContainer" class="content-section">
+                <div id="design_index" class="design-content lightMint">
+                    <h1>Extended<span class="numerics">-</span>Reality<span class="numerics">(XR)</span></h1>
+                    <p>Where Augmented<span class="numerics">-</span>Reality<span class="numerics">(AR),</span> meets
+                        Virtual<span class="numerics">-</span>Reality<span class="numerics">(VR)!</span></p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+                            <!--
+                            <p>
+                                This section showcases
+                                visually engaging<span class="numerics">,</span> User<span
+                                    class="numerics">-</span>Interfaces
+                                tailored for Virtual <span class="numerics">&</span> Augmented Reality<span
+                                    class="numerics">(AR/VR)</span> <br> Platforms<span class="numerics">.</span>
+                            </p>
+                            -->
+
+                            <div class="floatLeft">
+                                <h3>Contact Number</h3><br>
+                                <p>067 348 6378</p><br>
+                            </div>
+                            <div class="floatRight">
+                                <h3>Email Address</h3><br>
+                                <p>Tiaan@befoundstudio.co.za</p><br>
+                            </div>
+
+                            <!--=================CONTACT FORM=================-->
+                            <div class="contact-form-placeholder"></div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="design_info" class="design-content lightMint">
+                    <h1>Services <span class="numerics">&</span> Software</h1>
+                    <p>Tailored User<span class="numerics">-</span>Interfaces</p>
+                    <br>
+                    <div class="scroll-boxSmaller">
+                        <div class="contentBox">
+
+                            <h2 class="dividerHeading dividerHeading2 scroll-fade">Scroll through our list of services
+                            </h2>
+
+                            <section class="dual_list_section">
+                                <div class="list_column" id="list_column_1">
+
+                                    <h2 class="center_Heading serviceHeadings">Services</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>UI/UX Design for Games</li>
+                                        <li>Custom HUD <span class="numerics">&</span> Menu Systems</li>
+                                        <li>Unity UI Toolkit <span class="numerics">&</span> UGUI Integration</li>
+                                        <li>Unreal UMG (UI Editor) Development</li>
+                                        <li>Interactive Product Configurators</li>
+                                        <li>Dynamic UI Animations</li>
+                                        <li>Gamepad <span class="numerics">&</span> Touch UI Support</li>
+                                        <li>In<span class="numerics">-</span>Game Store <span class="numerics">&</span>
+                                            Inventory Interfaces</li>
+                                        <li>Customizable UI Skins <span class="numerics">&</span> Themes</li>
+                                        <li>UI Prototyping <span class="numerics">&</span> Wireframes</li>
+                                        <li>Cross<span class="numerics">-</span>Platform UI Optimization</li>
+                                        <li>VR/AR Interface Design</li>
+                                        <li>Localization<span class="numerics">-</span>Ready UI</li>
+                                        <li>Blueprint<span class="numerics">-</span>Driven UI Logic (Unreal)</li>
+                                        <li>Scriptable UI Architecture (Unity)</li>
+                                        <li>UI State Management Systems</li>
+                                        <li>Responsive Layouts for Multiple Resolutions</li>
+                                        <li>Progress Bars <span class="numerics">&</span> Status Indicators</li>
+                                        <li>Custom Input Mapping Interfaces</li>
+                                        <li>Performance<span class="numerics">-</span>Optimized UI Assets</li>
+                                    </ul>
+                                </div>
+
+                                <div class="list_column" id="list_column_2">
+
+                                    <h2 class="center_Heading serviceHeadings">Locations</h2>
+
+                                    <ul class="scrolling_list">
+                                        <li>Johannesburg</li>
+                                        <li>Pretoria</li>
+                                        <li>Stellenbosch</li>
+                                        <li>Bloemfontein</li>
+                                        <li>Cape<span class="numerics">-</span>Town</li>
+                                        <li>Durban</li>
+                                        <li>Gqeberha</li>
+                                        <li>Boksburg</li>
+                                        <li>Roodepoort</li>
+                                        <li>Vereeniging</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="design_gallery" class="design-content lightMint">
+                    <h1>Product<span class="numerics">-</span>Showcases</h1>
+                    <p>Here<span class="numerics">'</span>s how you stand out from your competition<span
+                            class="numerics">!</span></p>
+                    <br>
+                    <div class="scroll-box">
+                        <div class="contentBox">
+
+
+                            <!-- Divider Heading -->
+                            <h1 class="dividerHeading">First Slider</h1>
+
+                            <!-- Slider 1 -->
+                            <section class="image-slider">
+                                <div class="slider-wrapper" id="sliderWrapper1">
+                                    <div class="slider-heading-container">
+                                        <div class="slider-heading">Slide 1 Heading</div>
+                                    </div>
+
+                                    <div class="slide active"
+                                        style="background-image: url('../media/dark-grey-concrete-texture_1375194-29599.avif');"
+                                        data-heading="Slide 1 Heading"></div>
+                                    <div class="slide" style="background-image: url('../media/hy.gif');"
+                                        data-heading="Slide 2 Heading"></div>
+                                    <div class="slide" style="background-image: url('./HoneyCoumb_Design.jpg');"
+                                        data-heading="Slide 3 Heading"></div>
+                                    <div class="slide" style="background-image: url('./Random_Blocks_Design.jpeg');"
+                                        data-heading="Slide 4 Heading"></div>
+                                    <div class="slide" style="background-image: url('./Random_Blocks_Design2.png');"
+                                        data-heading="Slide 5 Heading"></div>
+
+                                    <button class="nav prev">&#10094;</button>
+                                    <button class="nav next">&#10095;</button>
+
+                                    <div class="indicators"></div>
+                                </div>
+                            </section>
+
+                            <!-- Divider Heading -->
+                            <h1 class="dividerHeading">Second Slider</h1>
+
+                            <!-- Slider 2 -->
+                            <section class="image-slider">
+                                <div class="slider-wrapper" id="sliderWrapper2">
+                                    <div class="slider-heading-container">
+                                        <div class="slider-heading">Slide 2 Heading</div>
+                                    </div>
+
+                                    <div class="slide active" style="background-image: url('./DNA_Coulomb_Design.png');"
+                                        data-heading="Slide 1 Heading"></div>
+                                    <div class="slide" style="background-image: url('./RNA_Strand_Design.jpg');"
+                                        data-heading="Slide 2 Heading"></div>
+                                    <div class="slide" style="background-image: url('./Reflecrion_Design.jpg');"
+                                        data-heading="Slide 3 Heading"></div>
+
+                                    <button class="nav prev">&#10094;</button>
+                                    <button class="nav next">&#10095;</button>
+
+                                    <div class="indicators"></div>
+                                </div>
+                            </section>
+
+
+                            <!-- Divider Heading -->
+                            <h1 class="dividerHeading">Third Slider</h1>
+
+                            <!-- Slider 2 -->
+                            <section class="image-slider">
+                                <div class="slider-wrapper" id="sliderWrapper3">
+                                    <div class="slider-heading-container">
+                                        <div class="slider-heading">Slide 3 Heading</div>
+                                    </div>
+
+                                    <div class="slide active" style="background-image: url('./DNA_Coulomb_Design.png');"
+                                        data-heading="Slide 1 Heading"></div>
+                                    <div class="slide" style="background-image: url('./RNA_Strand_Design.jpg');"
+                                        data-heading="Slide 2 Heading"></div>
+                                    <div class="slide" style="background-image: url('./Reflecrion_Design.jpg');"
+                                        data-heading="Slide 3 Heading"></div>
+
+                                    <button class="nav prev">&#10094;</button>
+                                    <button class="nav next">&#10095;</button>
+
+                                    <div class="indicators"></div>
+                                </div>
+                            </section>
+
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back Button Outside of Brochures -->
+    <button class="back-btn coldDarkGrey" type="button" title="Back to All Brochures">
+        <img src="../media/Icons/unselected icons-08.png" width="30px"
+            data-unselected="../media/Icons/unselected icons-08.png"
+            data-hovered="../media/Icons/mouseover icons-08.png" data-selected="../media/Icons/selected icons-08.png" />
+    </button>
+
+
+
+    <script src="../script/parallax_gradient.js"></script>
+    <script src="../script/brochureSelector.js"></script>
+    <script src="../script/navigation.js"></script>
+    <script src="../script/mobileNav.js"></script>
+    <script src="../script/iconState.js"></script>
+
+    <script src="../script/automatic_slider.js"></script>
+    <script src="../script/dual_list_section.js"></script>
+    <script src="../script/websiteBlocks.js" defer></script>
+    <script src="../script/contact-form.js" defer></script>
+    <script src="../script/back_BTN.js"></script>
+</body>
+
+</html>
