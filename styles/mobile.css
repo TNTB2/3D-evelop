@@ -1,0 +1,240 @@
+/* Mobile Styles for Back Button and Content */
+@media (max-width: 1366px) {
+
+    /* Initially show the brochure-cover on mobile */
+    .brochure-cover {
+        width: 100%;
+        display: block;
+        min-width: 300px;
+        padding-left: 80px;
+        /* space for nav */
+    }
+
+    .brochure-cover p,
+    .brochure-cover h2 {
+        width: 170%;
+    }
+
+
+    /* Hide it when navigation triggers it */
+    .brochure-cover.hidden {
+        display: none !important;
+    }
+
+    /* Content sections hidden initially on mobile */
+    .content-section {
+        display: none;
+        min-width: 300px;
+    }
+
+    .brochure-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 130px;
+        margin-left: -30px;
+    }
+
+    .mobile-nav-item {
+        cursor: pointer;
+    }
+
+    .brochure-section {
+        margin-top: -100px;
+        box-shadow: 20px 20px 20px 30px rgba(0, 0, 0, 0.1);
+        border-right: 5px solid #222b31;
+        border-bottom: 5px solid #222b31;
+        box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .brochure-section:hover {
+        box-shadow: 20px 20px 50px 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .scroll-box {
+        height: 67vh;
+        width: 40vh;
+        max-width: 90%;
+    }
+
+    .scroll-boxSmaller {
+        height: 60vh;
+        max-width: 90%;
+    }
+
+
+    #web-development {
+        z-index: 1;
+        width: 95%;
+        margin-left: 55%;
+        transform: translateX(-50%);
+    }
+
+    #sculpting {
+        z-index: 2;
+        width: 100%;
+        margin-left: 55%;
+        transform: translateX(-50%);
+    }
+
+    #graphics-design {
+        z-index: 3;
+        width: 105%;
+        margin-left: 55%;
+        transform: translateX(-50%);
+    }
+
+    #web-development:hover,
+    #sculpting:hover,
+    #graphics-design:hover {
+        width: 110%;
+        margin-left: 55%;
+        z-index: 4;
+    }
+
+    .web-content,
+    .sculpting-content,
+    .design-content {
+        height: 100%;
+        margin-left: -20px;
+        margin-top: 0%;
+        border-left: 5px solid #222b31;
+    }
+
+    .web-content h1,
+    .web-content p,
+    .sculpting-content h1,
+    .sculpting-content p,
+    .design-content h1,
+    .design-content p {
+        margin-left: 20px;
+        min-width: 200px;
+    }
+
+    .contentBox h1,
+    .contentBox p {
+        margin-left: -18px;
+    }
+
+    .back-btn {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /* Navigation styling */
+    .brochure-nav {
+        width: 50px;
+        flex-direction: row;
+        height: 260px;
+        display: block;
+    }
+
+    .brochure-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .brochure-nav ul li {
+        padding: 10px 0;
+        width: 50px;
+        border-radius: 15px 0 0 15px;
+        text-align: center;
+    }
+
+    .brochure-nav ul li a {
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    /* Adjusted content containers */
+    #webContentContainer,
+    #sculptingContentContainer,
+    #designContentContainer {
+        display: block;
+    }
+
+    .brochure-content {
+        margin: -50px 0 0 -90px;
+        width: 100%;
+        min-width: 195px;
+    }
+
+    .brochure-content p {
+        letter-spacing: 0px;
+    }
+
+    /* Logo container below text */
+    .brochure-logo-container {
+        padding-top: 2rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .brochure-logo-container img {
+        width: 150px;
+    }
+
+
+
+    #web-info-btn img,
+    #web-home-btn img,
+    #web-gallery-btn img,
+    #sculpting-home-btn img,
+    #sculpting-home-btn img,
+    #sculpting-home-btn img,
+    #design-home-btn img,
+    #design-info-btn img,
+    #design-gallery-btn img,
+    #contactBtn1 img,
+    #contactBtn2 img,
+    #contactBtn3 img,
+    #back_btn1 img,
+    #back_btn2 img,
+    #back_btn3 img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 640px) {
+    .brochure-nav li {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brochure-nav li img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+/* === Contact section === */
+@media (max-width: 768px) {
+
+    .envelope {
+        width: 90%;
+        height: 300px;
+    }
+
+    .contact-form-container {
+        width: 200px;
+    }
+}
+
+
+
+/* === Responsive Adjustments === */
+@media (min-width: 640px) and (max-width: 1366px) {
+    .back-btn {
+        bottom: 10px;
+        left: 10px;
+        z-index: 99;
+    }
+}

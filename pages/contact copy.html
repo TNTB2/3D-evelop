@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envelope Contact Form</title>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/colors.css" />
+</head>
+
+<body>
+    <div class="contact coldDarkGrey">
+
+        <div class="contact-form-container lightGrey" id="form-container">
+            <form id="contact-form">
+
+                <a class="back-to-site bin darkGrey" href="../pages/index.html"><i class="fa fa-trash-o"></i></a>
+                <h2>Get in touch</h2>
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="number" name="number" placeholder="Your Number" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="darkGrey">Send</button>
+            </form>
+        </div>
+
+        <div class="envelope-backdrop">
+            <div class="envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body"></div>
+                <div class="envelope-flap" id="envelope-flap"></div>
+            </div>
+        </div>
+
+        <div class="thank-you-message" id="thank-you">
+            <div class="envelope thank-you-envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body"></div>
+                <div class="envelope-flap closed"></div>
+            </div>
+            <p>Your message was recieved, Thank you!</p>
+            <a class="back-to-site" href="../pages/index.html">&#8592; Return to Home</a>
+        </div>
+
+        <script src="../script/contact.js"></script>
+    </div>
+
+</body>
+
+</html>

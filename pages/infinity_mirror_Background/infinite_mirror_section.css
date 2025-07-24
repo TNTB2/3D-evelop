@@ -1,0 +1,244 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  background: black;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Footer */
+header, footer {
+  background: #111;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Infinity Mirror Wrapper - holds mirror background and content */
+.infinity-mirror-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 700px; /* Default desktop height */
+  max-height: 100vh;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  background-color: #000;
+  cursor: none;
+
+  /* layout flex to center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+/* Responsive heights for wrapper */
+@media (max-width: 480px) {
+  .infinity-mirror-wrapper {
+    height: 400px;
+    padding: 2rem 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .infinity-mirror-wrapper {
+    height: 550px;
+    padding: 2.5rem 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .infinity-mirror-wrapper {
+    height: 600px;
+    padding: 2.75rem 0;
+  }
+}
+
+/* Infinity Mirror - background layer */
+.infinity-mirror {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  overflow: hidden;
+  pointer-events: none;
+  cursor: none;
+  z-index: 1;
+
+  /* flex center nested mirror blocks */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Mirror blocks: width and height equal to keep square shape */
+.mirror-block {
+  position: relative;
+  width: 80vw;     /* base width */
+  height: 80vw;    /* equal height for square */
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  box-shadow: 0 0 15px;
+  overflow: hidden;
+}
+
+/* Adjusted first mirror-block smaller to fit with added padding */
+.level-1 {
+  width: 75vw;
+  height: 75vw;
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Nested blocks scale down to 85% of parent's width and height */
+.level-2,
+.level-3,
+.level-4,
+.level-5 {
+  width: 85%;
+  height: 85%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.level-2 {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+.level-3 {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.level-4 {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+.level-5 {
+  background: rgba(0, 0, 0, 0.02);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+
+.infinity-mirror-wrapper * {
+  color: #ffffff; /* Neon cyan color */
+  text-shadow:
+    0 0 5px #000000,
+    0 0 10px #ffffff,
+    0 0 20px #ffffffce,
+    0 0 40px #ffffffa0,
+    0 0 80px #ffffff86;
+  /* Optional font-weight and letter spacing for style */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Content container inside wrapper */
+.infinity-mirror-wrapper > .mirror-content {
+  position: relative;
+  z-index: 2; /* above the mirror */
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+  color: white;
+  /* center content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cursor Reflections: match block level + fade */
+.cursor-reflection {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: left, top;
+  display: none; /* hidden by default */
+  transform: translate(-50%, -50%);
+}
+
+/* Deeper cursors get fainter and smaller */
+#cursor-1 {
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 10;
+  transform: translate(-50%, -50%) scale(1);
+}
+#cursor-2 {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 9;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+#cursor-3 {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 8;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+#cursor-4 {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 7;
+  transform: translate(-50%, -50%) scale(0.85);
+}
+#cursor-5 {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 6;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Custom neon ring for actual cursor */
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.custom-cursor.active {
+  opacity: 1;
+}
+
+/* Pulse animation on mirror-block */
+.mirror-block.pulse,
+.infinity-mirror.pulse {
+  border-color: #ffffff !important;
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.15),
+    0 0 50px rgba(255, 255, 255, 0.1),
+    0 0 75px rgba(255, 255, 255, 0.07);
+  transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}

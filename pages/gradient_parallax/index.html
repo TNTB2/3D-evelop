@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gradient Parallax Eyeball Effect</title>
+    <link rel="stylesheet" href="./parallax_gradient.css" />
+    <link rel="stylesheet" href="../automatic_slider.css" />
+    <link rel="stylesheet" href="../timeline.css" />
+    <link rel="stylesheet" href="../contact.css" />
+</head>
+
+<body>
+    <div class="gradient-layer"></div>
+
+    <header class="main-header">
+        <h1>Welcome to Our Website</h1>
+        <p>Your success starts here.</p>
+    </header>
+
+    <main class="content">
+        <section class="block topBlock">
+            <!-- Info Section -->
+            <section class="info-grid">
+                <div class="info-cell">
+                    <div class="icon">📦</div>
+                    <h2>Our Services</h2>
+                    <p>We provide top-notch digital solutions tailored to your business needs.</p>
+                </div>
+                <div class="info-cell">
+                    <div class="icon">⚙️</div>
+                    <h2>How We Work</h2>
+                    <p>Our process is transparent, efficient, and collaborative.</p>
+                </div>
+                <div class="info-cell">
+                    <div class="icon">📈</div>
+                    <h2>Why Choose Us</h2>
+                    <p>We are committed to results-driven strategies and long-term partnerships.</p>
+                </div>
+            </section>
+        </section>
+
+
+
+        <section class="block">
+            <!-- Timeline Section -->
+            <section class="timeline-section">
+
+                <!-- Desktop Horizontal Timeline -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-point">1</div>
+                        <div class="timeline-line line-top"></div>
+                        <div class="timeline-label label-top">Kickoff</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-point">2</div>
+                        <div class="timeline-line line-bottom"></div>
+                        <div class="timeline-label label-bottom">Research & Analysis</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-point">3</div>
+                        <div class="timeline-line line-top"></div>
+                        <div class="timeline-label label-top">Wireframes</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-point">4</div>
+                        <div class="timeline-line line-bottom"></div>
+                        <div class="timeline-label label-bottom">Development</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-point">5</div>
+                        <div class="timeline-line line-top"></div>
+                        <div class="timeline-label label-top">Testing & Launch</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Vertical Timeline -->
+                <div class="timeline-mobile">
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-content left">
+                            <div class="branch-line"></div>
+                            <div class="label">1999</div>
+                        </div>
+                        <div class="timeline-point">1</div>
+                    </div>
+
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-content right">
+                            <div class="branch-line"></div>
+                            <div class="label">2000</div>
+                        </div>
+                        <div class="timeline-point">2</div>
+                    </div>
+
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-content left">
+                            <div class="branch-line"></div>
+                            <div class="label">2001</div>
+                        </div>
+                        <div class="timeline-point">3</div>
+                    </div>
+
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-content right">
+                            <div class="branch-line"></div>
+                            <div class="label">2002</div>
+                        </div>
+                        <div class="timeline-point">4</div>
+                    </div>
+
+                    <div class="timeline-item-mobile">
+                        <div class="timeline-content left">
+                            <div class="branch-line"></div>
+                            <div class="label">2003</div>
+                        </div>
+                        <div class="timeline-point">5</div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+
+
+        <section class="block">
+            <!-- Slider Section -->
+            <section class="image-slider">
+
+                <div class="slider-wrapper" id="sliderWrapper">
+
+                    <div class="slider-heading-container">
+                        <div class="slider-heading" id="sliderHeading">Slide 1 Heading</div>
+                    </div>
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <div class="slide active" style="background-image: url('./media/7.png');"
+                            data-heading="Slide 1 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/1.png');"
+                            data-heading="Slide 2 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/2.png');"
+                            data-heading="Slide 3 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/3.png');"
+                            data-heading="Slide 4 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/4.png');"
+                            data-heading="Slide 5 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/5.png');"
+                            data-heading="Slide 6 Heading"></div>
+                        <div class="slide" style="background-image: url('./media/6.png');"
+                            data-heading="Slide 7 Heading"></div>
+
+                        <button class="nav prev" id="prevBtn">&#10094;</button>
+                        <button class="nav next" id="nextBtn">&#10095;</button>
+
+                        <div class="indicators" id="indicators"></div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+
+
+        <section class="block">
+            <!-- Contact Section -->
+            <section class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Street, City, Country</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h2>Get In Touch</h2>
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <script src="./parallax_gradient.js"></script>
+    <script src="../script.js"></script>
+    <script src="../automatic_slider.js"></script>
+    <script src="../timeline.js"></script>
+</body>
+
+
+</html>
