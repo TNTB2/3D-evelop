@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const touchY = e.touches[0].clientY;
         const delta = lastTouchY - touchY;
         lastTouchY = touchY;
-        const sensitivity = 0.002;
+        const sensitivity = 0.0003;
         currentProgress = clamp(
           currentProgress + delta * sensitivity,
           0,
