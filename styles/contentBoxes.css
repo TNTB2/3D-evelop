@@ -35,25 +35,25 @@
     width: 12px;
 }
 
+/* Outer track */
 .scroll-box::-webkit-scrollbar-track {
-    background: red;
+    background: rgb(255, 255, 255);
 }
 
 .scroll-box::-webkit-scrollbar-thumb {
     background-color: black;
     border-radius: 6px;
-    border: 2px solid red;
 }
 
 
 .scroll-boxSmaller::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 
 /* Firefox Scrollbar Styles */
 /* These require different selectors */
 .scroll-box {
-    scrollbar-width: 50px;
-    scrollbar-color: red black;
+    scrollbar-width: auto;
+    scrollbar-color: rgb(255, 255, 255) black;
 }

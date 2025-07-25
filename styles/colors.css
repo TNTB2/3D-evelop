@@ -65,7 +65,7 @@ body.sculpting-bg {
 body.design-bg {
     background-image: url('../media/Backgrounds/FeathersTexture-Black.png');
     background-repeat: repeat;
-    background-color: #191919;
+    background-color: #2a2a2a;
     background-size: 30%;
 }
 
@@ -203,6 +203,9 @@ p, li {
 .back-btn {
     background-color: #222b31;
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #fefeff, 0 0 20px #eefaff, 0 0 30px #e6f7ff, 0 0 40px #ccf2ff;
+
+
 }
 
 /* Hover effect for Back button */
