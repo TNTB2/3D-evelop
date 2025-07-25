@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isTouchDevice()) return;
       e.preventDefault();
       const delta = e.deltaY;
-      const sensitivity = 0.0015;
+      const sensitivity = 0.0003;
       currentProgress = clamp(
         currentProgress + delta * sensitivity,
         0,
