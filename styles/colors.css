@@ -50,17 +50,23 @@ body {
 body.web-bg {
 
     background-color: #191919;
-    background-image: url('../media/logos/3Ddevelop_logo-black.png');
+    background-image: url('../media/Backgrounds/ReptileScales-Texture-BlackOutlines.png');
     background-repeat: repeat;
-    background-size: 20%;
+    background-size: 30%;
 }
 
 body.sculpting-bg {
-    background-image: url('../media/MoodBoard/12bb9e6ae6efdaf863a70168feec64b1.jpg');
+    background-image: url('../media/Backgrounds/FishScales-TrueScales.png');
+    background-repeat: repeat;
+    background-color: #191919;
+    background-size: 30%;
 }
 
 body.design-bg {
-    background-image: url('../media/MoodBoard/6198b898d5b66919da9cc38e25fd93be.jpg');
+    background-image: url('../media/Backgrounds/FeathersTexture-Black.png');
+    background-repeat: repeat;
+    background-color: #191919;
+    background-size: 30%;
 }
 
 
