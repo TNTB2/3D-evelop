@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update the gradient background based on current values
   const updateGradient = () => {
     gradient.style.background = `radial-gradient(circle at ${currentX}% ${currentY}%, #bc1919, #1f4f7e, #153656ff)`;
+    //gradient.style.background = `radial-gradient(circle at ${currentX}% ${currentY}%, #bc1919, #1f4f7e, #153656ff)`;
   };
 
   // Animation loop that handles interaction and idle motion
