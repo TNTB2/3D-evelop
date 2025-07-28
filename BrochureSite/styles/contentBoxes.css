@@ -1,0 +1,41 @@
+.scroll-box {
+    width: 100%;
+    height: 80%;
+    /* or use 100vh for full height */
+    overflow-x: hidden;
+    /* hide horizontal overflow */
+    overflow-y: auto;
+    /* enable vertical scrolling */
+    padding: 20px;
+    border-radius: 9px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.contentBox {
+    height: 800px;
+    /* simulate tall content for scrolling */
+}
+
+
+/* WebKit Scrollbar Styles */
+.scroll-box::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background: red;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid red;
+}
+
+/* Firefox Scrollbar Styles */
+/* These require different selectors */
+.scroll-box {
+    scrollbar-width: 50px;
+    scrollbar-color: red black;
+}

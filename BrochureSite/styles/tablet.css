@@ -1,0 +1,73 @@
+/* Tablet Styles for Brochures */
+@media (min-width: 640px) and (max-width: 1366px) {
+  .brochure-cover {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .brochure-container {
+    align-items: center;
+    padding-top: 30px;
+    gap: 3rem;
+  }
+
+  .brochure-cover p,
+  .brochure-cover h2 {
+    width: 100%;
+  }
+
+  .brochure-section {
+    width: 90%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+
+  .brochure-section:hover {
+    width: 95%;
+    z-index: 10;
+  }
+
+  #web-development,
+  #sculpting,
+  #graphics-design {
+    margin-left: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .web-content,
+  .sculpting-content,
+  .design-content {
+    padding: 1rem;
+  }
+
+  .back-btn-nav {
+    position: fixed;
+  }
+
+  .back-btn {
+    position: fixed;
+    z-index: 99;
+  }
+
+  .brochure-nav {
+    width: 50px;
+    justify-content: center;
+  }
+
+  .brochure-nav ul {
+    width: 20px;
+    margin-top: -15px;
+  }
+
+  .brochure-nav ul li {
+    width: 100%;
+    width: 50px;
+  }
+
+  .brochure-content {
+    margin: 0;
+    width: 100%;
+  }
+}

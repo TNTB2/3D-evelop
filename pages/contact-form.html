@@ -1,0 +1,63 @@
+<div class="contact">
+    <!-- FORM START -->
+    <div class="contact-form-wrapper">
+        <form class="contact-form contact-form-container">
+            <h2>Get in touch</h2>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="number" name="number" placeholder="Your Number" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <div class="envelope-backdrop">
+            <div class="envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body"></div>
+                <div class="envelope-flap"></div>
+            </div>
+        </div>
+
+        <div class="thank-you-message">
+            <div class="envelope thank-you-envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body"></div>
+                <div class="envelope-flap closed"></div>
+            </div>
+            <p>Your message was received, Thank you!</p>
+            <a class="back-to-site" href="https://tntb2.github.io/Web-Strings/#">&#8592; Return to Home</a>
+        </div>
+    </div>
+    <!-- FORM END -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".contact-form-wrapper").forEach((wrapper) => {
+                const form = wrapper.querySelector(".contact-form");
+                const formContainer = wrapper.querySelector(".contact-form-container");
+                const flap = wrapper.querySelector(".envelope-flap");
+                const thankYou = wrapper.querySelector(".thank-you-message");
+                const envelope = wrapper.querySelector(".envelope");
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+
+                    envelope.style.zIndex = "3";
+                    flap.classList.add("closed");
+
+                    formContainer.style.transform = "translateY(-200%)";
+                    formContainer.style.opacity = "0";
+                    envelope.style.transform = "translateY(-200%)";
+
+                    setTimeout(() => {
+                        envelope.style.opacity = "0";
+                    }, 300);
+
+                    setTimeout(() => {
+                        thankYou.classList.add("show");
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</div>
