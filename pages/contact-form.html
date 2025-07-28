@@ -1,14 +1,20 @@
 <div class="contact">
     <!-- FORM START -->
     <div class="contact-form-wrapper">
-        <form class="contact-form contact-form-container">
+        <form class="contact-form contact-form-container" action="https://formsubmit.co/Tiaan@befoundstudio.co.za"
+            method="POST">
             <h2>Get in touch</h2>
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="number" name="number" placeholder="Your Number" required />
             <input type="email" name="email" placeholder="Your Email" required />
             <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <!-- Optional: Prevent bot submissions -->
+            <input type="hidden" name="_captcha" value="false" />
+
             <button type="submit">Send</button>
         </form>
+
 
         <div class="envelope-backdrop">
             <div class="envelope">
@@ -25,7 +31,7 @@
                 <div class="envelope-flap closed"></div>
             </div>
             <p>Your message was received, Thank you!</p>
-            <a class="back-to-site" href="https://tntb2.github.io/Web-Strings/#">&#8592; Return to Home</a>
+            <a class="back-to-site" href="https://tntb2.github.io/3D-evelop/#">&#8592; Return to Home</a>
         </div>
     </div>
     <!-- FORM END -->
