@@ -1,0 +1,217 @@
+/* ==============================
+   Global Styles
+============================== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+/* ==============================
+   Header
+============================== */
+header.header,
+.filter-bar {
+    background: #1a1a1a;
+}
+
+header.header {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ==============================
+   Filter Bar
+============================== */
+.filter-bar {
+    position: sticky;
+    top: 0;
+    padding: 15px 20px;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.filter-bar select {
+    padding: 10px;
+    min-width: 200px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #222;
+    color: #fff;
+}
+
+/* ==============================
+   Gallery Wrapper
+============================== */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ==============================
+   Project (Full-width section)
+============================== */
+.project {
+    position: relative;
+    isolation: isolate; /* Contains blur inside without affecting layout */
+    width: 100vw;
+    min-height: 700px;
+    overflow: visible; /* allow blur to spread outwards */
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================
+   OUTWARD Blur (Top & Bottom), behind images
+========================================== */
+.project::before,
+.project::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 22%;        /* size of outer-blur halo */
+    pointer-events: none;
+    z-index: -1;        /* BEHIND all images/videos */
+
+    filter: blur(40px); /* strong outward glow */
+}
+
+/* Top outward blur */
+.project::before {
+    top: -14%; /* moves blur above container */
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0)
+    );
+}
+
+/* Bottom outward blur */
+.project::after {
+    bottom: -14%; /* moves blur below container */
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0)
+    );
+}
+
+/* ==============================
+   Project Content
+============================== */
+.project-content {
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px 30px;
+    margin-left: 40px;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* ==============================
+   Project Image Slider
+============================== */
+.project-images,
+.project-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-images {
+    z-index: 1; /* ABOVE the outward blur */
+}
+
+.project-images img {
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.project-images img.active {
+    opacity: 1;
+}
+
+/* ==============================
+   Contain-mode Projects
+============================== */
+.project.image-contain {
+    background: linear-gradient(135deg, #111, #29728f, #111);
+}
+
+.project.image-contain .project-images img {
+    object-fit: contain !important;
+    object-position: center;
+    background: transparent;
+}
+
+/* ==============================
+   Tags
+============================== */
+.tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    background: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* ===== Video Background Projects ===== */
+.project.project-video .project-images video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* same layer as images */
+}
+
+.project.project-video .project-images img {
+    display: none !important;
+}
+
+.darkBG {
+    background: rgba(54, 54, 54, 0.5);
+    background: linear-gradient(90deg, #1111118a, #7a7a7aa9, #1111118a);
+    border-radius: 30px;
+}
+
+
+/* ==============================
+   Mobile Responsive
+============================== */
+@media (max-width: 768px) {
+    .project {
+        min-height: 400px;
+        align-items: flex-start;
+    }
+
+    .project-content {
+        max-width: 90%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        margin: 0 0 0 10px;
+    }
+}
