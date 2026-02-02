@@ -16,6 +16,10 @@ header.header,
     background: #1a1a1a;
 }
 
+.header img {
+    width: 250px;
+    margin-bottom: 10px;
+}
 header.header {
     padding: 20px;
     text-align: center;
@@ -45,6 +49,17 @@ header.header {
     background: #222;
     color: #fff;
 }
+
+
+.contactInfo {
+    list-style: none;
+    padding: 50px;
+    margin: 10px;
+}
+.contactInfo li {
+    padding: 10px;
+}
+
 
 /* ==============================
    Gallery Wrapper
